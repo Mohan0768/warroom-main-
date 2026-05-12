@@ -17,7 +17,7 @@ export default function StartWithYouPage() {
       </header>
 
       {/* Hero Image and Buttons */}
-      <section className="py-12 md:py-16 px-4 md:px-6 bg-white">
+      <section className="py-6 md:py-8 px-4 md:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           {/* Image */}
           <div className="w-full rounded-lg overflow-hidden mb-8">
@@ -51,7 +51,7 @@ export default function StartWithYouPage() {
       </section>
 
       {/* Hero Text Section */}
-      <section className="py-12 md:py-16 px-4 md:px-6 bg-yellow-500 text-black">
+      <section className="py-8 md:py-10 px-4 md:px-6 bg-yellow-500 text-black">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-4 md:mb-6">
             Start With YOU
@@ -65,8 +65,8 @@ export default function StartWithYouPage() {
       </section>
 
       {/* Content */}
-      <section className="py-16 md:py-20 px-4 md:px-6 bg-white">
-        <div className="max-w-4xl mx-auto space-y-16">
+      <section className="py-10 md:py-12 px-4 md:px-6 bg-white">
+        <div className="max-w-4xl mx-auto space-y-10">
           {/* What is it */}
           <div className="space-y-6">
             <h2 className="text-4xl font-black">The Core Message</h2>

@@ -32,6 +32,9 @@ export function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-2 lg:gap-3">
+            <a href="https://v0-gaming-website-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 bg-transparent border-2 border-yellow-500 text-yellow-500 text-xs md:text-sm font-medium rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:scale-105">
+              WARROOM
+            </a>
             <a href="https://warroom-frontend-410969764896.us-central1.run.app/" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 bg-yellow-500 text-black text-xs md:text-sm font-medium rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-lg hover:scale-105">
               ENTER WAR ROOM
             </a>
@@ -59,6 +62,9 @@ export function Header() {
             <Link href="/war-room" className="text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">WAR ROOM</Link>
             <Link href="/start-with-you" className="text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">START WITH YOU</Link>
             <Link href="/the-garage" className="text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">THE GARAGE</Link>
+            <a href="https://v0-gaming-website-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-6 py-2 border-2 border-yellow-500 text-yellow-500 text-sm font-medium rounded w-fit hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:scale-105">
+              WARROOM
+            </a>
             <a href="https://calendly.com/mohan20051028/new-meeting" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-yellow-500 text-black text-sm font-medium rounded w-fit hover:bg-yellow-600 transition-all duration-300 hover:scale-105">
               BOOK A CALL
             </a>
