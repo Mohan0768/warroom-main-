@@ -67,108 +67,126 @@ export default function StartWithYouPage() {
       {/* Content */}
       <section className="py-12 md:py-16 px-4 md:px-6 bg-white">
         <div className="max-w-4xl mx-auto space-y-12 md:space-y-14">
-          {/* What is it */}
+          {/* Core Story */}
           <div className="space-y-6">
             <h2 className="text-4xl font-black">The Core Message</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Success in an AI-driven world starts with YOU. This keynote transforms how audiences think about innovation, change, and their personal power to shape the future. Whether you're leading a Fortune 500 company or just starting your entrepreneurial journey, the principles are the same.
+            <p className="text-lg text-gray-700 leading-relaxed italic">
+              "AI can answer any question you give it - But it cannot ask the question that only your life has prepared you to ask."
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              KK draws from 15+ years of leadership development experience to deliver insights that are immediately applicable and deeply transformative.
-            </p>
-          </div>
+            
+            <div className="bg-gray-50 p-6 md:p-8 rounded-lg space-y-6 text-gray-700">
+              <p className="text-base md:text-lg leading-relaxed">
+                <span className="font-bold text-black">"Jack of all trades. Master of none."</span> One friend even called my resume a biryani — a dish with too many ingredients.
+              </p>
 
-          {/* Topics Covered */}
-          <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-black">What You'll Learn</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="border-l-4 border-yellow-500 pl-6 py-2 space-y-2">
-                <h3 className="text-lg md:text-xl font-bold">How to Think Like an Entrepreneur</h3>
-                <p className="text-gray-700">Regardless of your role, entrepreneurial thinking is your competitive advantage.</p>
-              </div>
-              <div className="border-l-4 border-yellow-500 pl-6 py-2 space-y-2">
-                <h3 className="text-lg md:text-xl font-bold">AI as Your Thinking Tool</h3>
-                <p className="text-gray-700">Understand how to use AI to amplify your thinking and move forward with clarity.</p>
-              </div>
-              <div className="border-l-4 border-yellow-500 pl-6 py-2 space-y-2">
-                <h3 className="text-lg md:text-xl font-bold">Building Confidence in Uncertainty</h3>
-                <p className="text-gray-700">Navigate rapid change with conviction and adaptability.</p>
-              </div>
-              <div className="border-l-4 border-yellow-500 pl-6 py-2 space-y-2">
-                <h3 className="text-lg md:text-xl font-bold">Your Personal Impact Strategy</h3>
-                <p className="text-gray-700">Clarify your values, vision, and the thinking you need to succeed.</p>
-              </div>
+              <p className="text-base md:text-lg leading-relaxed">
+                I had a very successful corporate life as an Award Winning Leadership Trainer but everything changed when I was laid off. I spent a year applying for jobs with a newborn in my arms. Every interview ended the same way: "You have too many skills and you don't fit the role." I drowned myself in imposter syndrome and it nearly broke me.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                Then I realised: <span className="font-bold text-black">I cannot change who I am.</span> So I decided to start there instead.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                The moment I stopped trying to fix what made me different and started building from it, everything changed. Turns out, there was a word for that all along — <span className="font-bold text-black">Entrepreneur.</span>
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                I built a five-figure AI Marketing business from $0 and exited it to follow my YOU.
+              </p>
+            </div>
+
+            <div className="border-l-4 border-yellow-500 pl-6 space-y-4">
+              <p className="text-base md:text-lg leading-relaxed">
+                Here is what I know about the age of AI: <span className="font-bold">It can answer any question you give it. But it cannot ask the question that only your life has prepared you to ask.</span>
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                <span className="font-bold">AI can generate anything. It cannot become you.</span> No scar tissue. No comeback story. No moment where it had to decide whether to quit or go one more round. That is yours. Only yours.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed">
+                I work with students, managers, and business owners who feel the ground shifting and don't know where to stand in the AI world. I help them discover their <span className="font-bold">YOU</span> and I leave them with a piece of themselves, shaped and sharpened ready to be commercialised at any point in their life. Something no layoff can take. No algorithm can replicate. No company can downsize.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed font-bold text-black">
+                Your story, your strengths, your flaws, your obsessions — it is YOU!
+              </p>
             </div>
           </div>
 
-          {/* Perfect For */}
-          <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-black">Ideal For</h2>
-            <ul className="space-y-4 text-base md:text-lg text-gray-700">
-              <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
-                <span>Business school keynotes and graduation speeches</span>
-              </li>
-              <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
-                <span>Corporate leadership conferences and retreats</span>
-              </li>
-              <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
-                <span>Team offsites where you want to shift mindsets</span>
-              </li>
-              <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
-                <span>Industry conferences focused on innovation and leadership</span>
-              </li>
-            </ul>
-          </div>
+          {/* Hire me to speak */}
+          <div className="space-y-8">
+            <h2 className="text-3xl md:text-4xl font-black">Hire Me to Speak</h2>
+            
+            {/* Business Conferences */}
+            <div className="space-y-6">
+              <h3 className="text-2xl md:text-3xl font-bold text-yellow-600">Business Conferences</h3>
+              <div className="space-y-4">
+                <div className="border-l-4 border-yellow-500 pl-6 py-2 space-y-3">
+                  <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
+                  <p className="text-gray-700">Discover what makes you irreplaceable in an AI-driven world and how to leverage your unique perspective.</p>
+                </div>
+                <div className="border-l-4 border-yellow-500 pl-6 py-2 space-y-3">
+                  <h4 className="text-lg md:text-xl font-bold">AI in Leadership - Untold Stories of Managers in AI adoption</h4>
+                  <p className="text-gray-700">Real stories from managers navigating AI integration, their challenges, breakthroughs, and lessons learned.</p>
+                </div>
+                <div className="border-l-4 border-yellow-500 pl-6 py-2 space-y-3">
+                  <h4 className="text-lg md:text-xl font-bold">Costly AI Mistakes: The Thinking Gap</h4>
+                  <p className="text-gray-700">Learn from the most common strategic mistakes companies make with AI and how to avoid them through better thinking.</p>
+                </div>
+              </div>
+              <a
+                href="https://calendly.com/mohan20051028/new-meeting"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-500 text-black font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:scale-105"
+              >
+                👉 Book a pre-session call
+              </a>
+            </div>
 
-          {/* Outcomes */}
-          <div className="space-y-6">
-            <h2 className="text-4xl font-black">What Attendees Experience</h2>
-            <div className="bg-yellow-50 p-8 rounded-lg space-y-4">
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
-                  <span>Clarity on how they personally can thrive in an AI-driven world</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
-                  <span>Confidence to think boldly about their future</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
-                  <span>Practical frameworks they can apply immediately</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
-                  <span>Inspiration to become catalysts for change in their organizations</span>
-                </li>
-              </ul>
+            {/* Students Section */}
+            <div className="space-y-6 bg-blue-50 p-6 md:p-8 rounded-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-blue-600">For Students (Free In-Person Sessions)</h3>
+              <p className="text-sm font-medium text-gray-600">Southeast Florida</p>
+              <div className="space-y-4">
+                <div className="border-l-4 border-blue-500 pl-6 py-2 space-y-3">
+                  <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
+                  <p className="text-gray-700">Understand your unique value in a world where AI is everywhere.</p>
+                </div>
+                <div className="border-l-4 border-blue-500 pl-6 py-2 space-y-3">
+                  <h4 className="text-lg md:text-xl font-bold">Future of Work | Next Gen Entrepreneurs</h4>
+                  <p className="text-gray-700">Build the entrepreneurial thinking skills you'll need to thrive in your career.</p>
+                </div>
+              </div>
+              <a
+                href="https://calendly.com/mohan20051028/new-meeting"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-bold rounded hover:bg-blue-700 transition-all duration-300 hover:scale-105"
+              >
+                👉 Apply for a FREE Campus Session
+              </a>
             </div>
           </div>
 
-          {/* Testimonial */}
-          <div className="bg-gray-900 text-white p-6 md:p-8 rounded-lg space-y-4">
-            <p className="text-base md:text-lg italic">
-              "KK's keynote completely shifted how our team thinks about innovation. Within weeks, we saw tangible changes in how our leaders approached problems."
-            </p>
-            <p className="text-yellow-400 font-medium">— VP of Leadership Development, Fortune 500 Tech Company</p>
-          </div>
+
 
           {/* CTA */}
           <div className="bg-black text-white p-8 md:p-12 rounded-lg text-center space-y-6">
-            <h3 className="text-2xl md:text-3xl font-black">Ready to Bring This Keynote to Your Event?</h3>
+            <h3 className="text-2xl md:text-3xl font-black">Let's Start With YOU</h3>
             <p className="text-gray-300 text-base md:text-lg">
-              Let's discuss how "Start With YOU" can transform your audience.
+              Whether you're looking to hire me for your conference or want a free campus session, let's have a conversation about your needs.
             </p>
-            <Link 
-              href="/speaking-engagement"
-              className="inline-block px-6 md:px-8 py-2 md:py-3 bg-yellow-500 text-black text-sm md:text-base font-medium rounded hover:bg-yellow-600 transition-all duration-300 hover:scale-105"
+            <a 
+              href="https://calendly.com/mohan20051028/new-meeting"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 md:px-8 py-2 md:py-3 bg-yellow-500 text-black text-sm md:text-base font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:scale-105"
             >
-              INQUIRE ABOUT A SPEAKING ENGAGEMENT
-            </Link>
+              BOOK A CALL NOW
+            </a>
           </div>
         </div>
       </section>

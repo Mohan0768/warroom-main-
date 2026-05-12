@@ -1,6 +1,7 @@
 import { Header } from '@/components/header'
 import { PageNavigation } from '@/components/page-navigation'
 import { Footer } from '@/components/footer'
+import { WarRoomAudio } from '@/components/war-room-audio'
 
 export const metadata = {
   title: 'WAR ROOM LHS - Live Business Simulation | humanfirstbykk',
@@ -10,6 +11,7 @@ export const metadata = {
 export default function WarRoomPage() {
   return (
     <main className="bg-white">
+      <WarRoomAudio />
       <Header />
 
       {/* Hero */}
