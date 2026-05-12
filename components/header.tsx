@@ -12,12 +12,13 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 transition-all duration-300">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="relative h-10 md:h-12 w-10 md:w-12">
+          <Link href="/" className="relative h-10 md:h-12 w-auto">
             <Image
-              src="/warroom-logo.jpg"
-              alt="War Room logo"
-              fill
-              className="object-contain"
+              src="/humanfirst-logo.png"
+              alt="HUMANFIRST BY KK logo"
+              height={48}
+              width={200}
+              className="object-contain h-10 md:h-12 w-auto"
               priority
             />
           </Link>
