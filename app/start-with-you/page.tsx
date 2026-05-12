@@ -17,14 +17,14 @@ export default function StartWithYouPage() {
       </header>
 
       {/* Hero Image and Buttons */}
-      <section className="py-12 md:py-16 px-4 md:px-6 bg-white">
+      <section className="py-8 md:py-12 px-4 md:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           {/* Image */}
-          <div className="w-full rounded-lg overflow-hidden mb-8">
+          <div className="w-full rounded-lg overflow-hidden mb-6">
             <img 
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-05-07%20233137-qjdhlcNi3n3y3CBG52f8Y77sYN6tWV.png"
               alt="Start With YOU - HUMANFIRST BY KK"
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover block"
             />
           </div>
 
@@ -34,7 +34,7 @@ export default function StartWithYouPage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 sm:flex-none px-8 py-3 bg-yellow-500 text-black font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-lg hover:scale-105 text-center"
+              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 bg-yellow-500 text-black font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
             >
               PRE BUSINESS SESSION
             </a>
@@ -42,7 +42,7 @@ export default function StartWithYouPage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 sm:flex-none px-8 py-3 border-2 border-yellow-500 text-yellow-500 font-bold rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:scale-105 text-center"
+              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 border-yellow-500 text-yellow-500 font-bold rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
             >
               CAMPUS FREE SESSION
             </a>
@@ -51,22 +51,22 @@ export default function StartWithYouPage() {
       </section>
 
       {/* Hero Text Section */}
-      <section className="py-12 md:py-16 px-4 md:px-6 bg-yellow-500 text-black">
+      <section className="py-10 md:py-14 px-4 md:px-6 bg-yellow-500 text-black">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-4 md:mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-3 md:mb-4">
             Start With YOU
             <br />
             Leadership Keynote
           </h1>
-          <p className="text-lg md:text-xl mb-8 leading-relaxed">
+          <p className="text-base md:text-lg leading-relaxed">
             Transform how you think about your future. This keynote helps leaders and students understand their power in an AI-driven world and build clarity and confidence.
           </p>
         </div>
       </section>
 
       {/* Content */}
-      <section className="py-16 md:py-20 px-4 md:px-6 bg-white">
-        <div className="max-w-4xl mx-auto space-y-16">
+      <section className="py-12 md:py-16 px-4 md:px-6 bg-white">
+        <div className="max-w-4xl mx-auto space-y-12 md:space-y-14">
           {/* What is it */}
           <div className="space-y-6">
             <h2 className="text-4xl font-black">The Core Message</h2>
