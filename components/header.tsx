@@ -12,12 +12,13 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 transition-all duration-300">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="relative h-10 md:h-12 w-10 md:w-12">
+          <Link href="/" className="relative h-10 md:h-12 w-auto">
             <Image
-              src="/warroom-logo.jpg"
-              alt="War Room logo"
-              fill
-              className="object-contain"
+              src="/humanfirst-logo.png"
+              alt="HUMANFIRST BY KK logo"
+              height={48}
+              width={200}
+              className="object-contain h-10 md:h-12 w-auto"
               priority
             />
           </Link>
@@ -25,7 +26,7 @@ export function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-6 lg:gap-8">
             <Link href="/" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">HOME</Link>
-            <Link href="/war-room" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">WAR ROOM</Link>
+            <a href="https://v0-gaming-website-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">WAR ROOM</a>
             <Link href="/start-with-you" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">START WITH YOU</Link>
             <Link href="/the-garage" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">THE GARAGE</Link>
           </nav>
@@ -56,7 +57,7 @@ export function Header() {
         {isOpen && (
           <nav className="md:hidden mt-4 flex flex-col gap-4 pb-4 animate-fadeIn">
             <Link href="/" className="text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">HOME</Link>
-            <Link href="/war-room" className="text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">WAR ROOM</Link>
+            <a href="https://v0-gaming-website-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">WAR ROOM</a>
             <Link href="/start-with-you" className="text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">START WITH YOU</Link>
             <Link href="/the-garage" className="text-sm font-medium text-gray-300 hover:text-yellow-500 transition-colors duration-300">THE GARAGE</Link>
             <a href="https://calendly.com/mohan20051028/new-meeting" target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-yellow-500 text-black text-sm font-medium rounded w-fit hover:bg-yellow-600 transition-all duration-300 hover:scale-105">

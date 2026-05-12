@@ -5,12 +5,12 @@ import Link from 'next/link'
 export function HeroSection() {
   return (
     <section 
-      className="min-h-screen flex items-center justify-center px-6 bg-black scroll-smooth relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center px-4 sm:px-6 bg-black scroll-smooth relative overflow-hidden"
       style={{
         backgroundImage: 'url(/hero-background.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'scroll'
       }}
     >
       {/* Overlay for better text readability */}
