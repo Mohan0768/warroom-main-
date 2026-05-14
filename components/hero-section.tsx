@@ -104,53 +104,56 @@ export function HeroSection() {
         ))}
       </div>
 
-      {/* Top Half - Image Section */}
-      <div className="relative z-10 h-1/2 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-6 md:py-8 animate-fadeInUp">
-        <div className="w-full max-w-5xl">
-          <div className="relative overflow-hidden rounded-xl shadow-2xl">
-            <img 
-              src="/hero-background.jpg"
-              alt="Build the thinking"
-              className="w-full h-auto max-h-96 object-cover block"
-            />
-          </div>
-        </div>
-      </div>
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: 'url(/hero-background.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      />
 
-      {/* Bottom Half - Text Content Section */}
-      <div className="relative z-10 h-1/2 flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-6 md:py-8 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-        <div className="w-full max-w-4xl mx-auto space-y-4 md:space-y-6">
-          {/* Tagline */}
-          <p className="text-xs md:text-sm font-medium text-gray-300 tracking-wide">
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70 z-[3]" />
+
+      {/* Content - Text Overlay */}
+      <div className="relative z-10 h-full flex flex-col justify-between px-4 sm:px-8 lg:px-16 py-12 md:py-20">
+        {/* Top Section - Tagline and Image Space */}
+        <div className="flex-shrink-0 animate-fadeInUp">
+          <p className="text-xs md:text-sm font-medium text-gray-300 tracking-widest">
             KK KANNABIRAN&apos;S humanfirstbykk
           </p>
+        </div>
 
-          {/* Main Headline */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-white">
-            BUILD THE
-            <br />
-            THINKING YOU WISH
-            <br />
-            YOU LEARNED{' '}
+        {/* Middle Section - Main Content */}
+        <div className="flex-grow flex flex-col justify-center animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+          {/* Main Headline - Single line display */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight text-white mb-6 md:mb-8 max-w-5xl">
+            BUILD THE THINKING YOU WISH YOU LEARNED{' '}
             <span className="text-yellow-500">EARLIER.</span>
           </h1>
 
-          {/* Description */}
-          <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed max-w-2xl">
+          {/* Description - Straight line text */}
+          <p className="text-sm sm:text-base md:text-lg text-gray-100 leading-relaxed max-w-4xl mb-2">
             In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
 
-          <p className="text-sm sm:text-base text-gray-300 font-medium max-w-2xl">
-            Entrepreneurial thinking workshops & business simulations.
+          <p className="text-sm sm:text-base text-gray-200 font-medium max-w-4xl">
+            Entrepreneurial thinking workshops & business simulations
           </p>
+        </div>
 
+        {/* Bottom Section - CTA and Stats */}
+        <div className="flex-shrink-0 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-2 md:gap-3 pt-2 animate-fadeInUp" style={{ animationDelay: '0.3s' }} suppressHydrationWarning={true}>
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12">
             <a 
               href="https://war-roomdemo.vercel.app/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 md:px-7 py-2 md:py-3 bg-yellow-500 text-black text-xs md:text-sm font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center"
+              className="px-6 md:px-8 py-3 bg-yellow-500 text-black text-xs md:text-sm font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center w-fit"
             >
               WAR ROOM FREE TRIAL
             </a>
@@ -158,25 +161,25 @@ export function HeroSection() {
               href="https://calendly.com/mohan20051028/new-meeting" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 md:px-7 py-2 md:py-3 border-2 border-yellow-500 text-yellow-500 text-xs md:text-sm font-bold rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center"
+              className="px-6 md:px-8 py-3 border-2 border-yellow-500 text-yellow-500 text-xs md:text-sm font-bold rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center w-fit"
             >
               BOOK A CALL
             </a>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-3 md:gap-6 pt-4 md:pt-6 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
+          <div className="grid grid-cols-3 gap-6 md:gap-12">
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-lg md:text-2xl font-black text-white">15+</p>
-              <p className="text-xs text-gray-300 mt-1 font-medium">YEARS</p>
+              <p className="text-2xl md:text-3xl font-black text-white">15+</p>
+              <p className="text-xs text-gray-300 mt-1 font-medium">YEARS IN LEADERSHIP</p>
             </div>
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-lg md:text-2xl font-black text-white">6</p>
-              <p className="text-xs text-gray-300 mt-1 font-medium">STAGES</p>
+              <p className="text-2xl md:text-3xl font-black text-white">6 Stages</p>
+              <p className="text-xs text-gray-300 mt-1 font-medium">LIVE WAR ROOM</p>
             </div>
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-lg md:text-2xl font-black text-white">$0→5M</p>
-              <p className="text-xs text-gray-300 mt-1 font-medium">GROWTH</p>
+              <p className="text-2xl md:text-3xl font-black text-white">$0→5-Figure</p>
+              <p className="text-xs text-gray-300 mt-1 font-medium">KK&apos;S BUILD</p>
             </div>
           </div>
         </div>
