@@ -5,7 +5,6 @@ import { AboutSection } from '@/components/about-section'
 import { OfferingsSection } from '@/components/offerings-section'
 import { QuoteSection } from '@/components/quote-section'
 import { KeynotesSection } from '@/components/keynotes-section'
-import { HireSection } from '@/components/hire-section'
 import { FAQSection } from '@/components/faq-section'
 import { Footer } from '@/components/footer'
 
@@ -19,7 +18,6 @@ export default function Home() {
       <OfferingsSection />
       <QuoteSection />
       <KeynotesSection />
-      <HireSection />
       <FAQSection />
       <Footer />
     </main>
