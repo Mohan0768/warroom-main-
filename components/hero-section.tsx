@@ -109,12 +109,12 @@ export function HeroSection() {
       <div className="relative z-10 flex flex-col gap-4 lg:gap-6 items-center px-3 sm:px-4 lg:px-8 py-6 lg:py-8 min-h-screen h-screen">
         
         {/* Image Section - Top on all devices */}
-        <div className="w-full flex items-center justify-center flex-shrink-0 animate-fadeInUp pt-4 lg:pt-6 flex-1">
-          <div className="w-full max-w-sm sm:max-w-md lg:max-w-4xl h-full">
+        <div className="w-full flex items-center justify-center flex-shrink-0 animate-fadeInUp pt-2 lg:pt-4 flex-1 px-2 sm:px-4">
+          <div className="w-full max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-5xl aspect-video">
             <img 
               src="/hero-background.jpg"
               alt="Build the thinking"
-              className="w-full h-full object-cover rounded-lg shadow-2xl"
+              className="w-full h-full object-contain rounded-lg shadow-2xl"
             />
           </div>
         </div>
