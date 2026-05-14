@@ -116,35 +116,30 @@ export function HeroSection() {
       </div>
 
       {/* Bottom Half - Text Section */}
-      <div className="relative z-10 h-1/2 bg-black flex flex-col justify-center px-4 sm:px-8 lg:px-16 py-8 md:py-12 animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+      <div className="relative z-10 h-1/2 bg-black flex flex-col justify-start px-4 sm:px-8 lg:px-16 pt-6 md:pt-8 animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
         <div className="w-full max-w-6xl">
-          {/* Tagline */}
-          <p className="text-xs md:text-sm font-medium text-gray-300 tracking-widest mb-4 md:mb-6">
-            KK KANNABIRAN&apos;S humanfirstbykk
-          </p>
-
-          {/* Main Headline - Straight line */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-white mb-4 md:mb-6">
+          {/* Main Headline - Reduced size */}
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-snug text-white mb-3 md:mb-4">
             BUILD THE THINKING YOU WISH YOU LEARNED{' '}
             <span className="text-yellow-500">EARLIER.</span>
           </h1>
 
-          {/* Description - Straight line text */}
-          <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed mb-2">
+          {/* Description - Reduced size with spacing */}
+          <p className="text-xs sm:text-sm md:text-base text-gray-300 leading-relaxed mb-2">
             In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
 
-          <p className="text-sm sm:text-base text-gray-300 font-medium mb-6 md:mb-8">
+          <p className="text-xs sm:text-sm md:text-base text-gray-400 font-regular mb-5 md:mb-6">
             Entrepreneurial thinking workshops & business simulations
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8">
+          {/* CTA Buttons - More Prominent */}
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
             <a 
               href="https://war-roomdemo.vercel.app/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 md:px-8 py-3 bg-yellow-500 text-black text-xs md:text-sm font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center w-fit"
+              className="px-7 md:px-10 py-3 md:py-3.5 bg-yellow-500 text-black text-sm md:text-base font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
             >
               WAR ROOM FREE TRIAL
             </a>
@@ -152,25 +147,25 @@ export function HeroSection() {
               href="https://calendly.com/mohan20051028/new-meeting" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 md:px-8 py-3 border-2 border-yellow-500 text-yellow-500 text-xs md:text-sm font-bold rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center w-fit"
+              className="px-7 md:px-10 py-3 md:py-3.5 border-2 border-yellow-500 text-yellow-500 text-sm md:text-base font-bold rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
             >
               BOOK A CALL
             </a>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 md:gap-12">
+          {/* Stats - Reduced size */}
+          <div className="grid grid-cols-3 gap-6 md:gap-10">
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-2xl md:text-3xl font-black text-white">15+</p>
-              <p className="text-xs text-gray-300 mt-1 font-medium">YEARS IN LEADERSHIP</p>
+              <p className="text-lg md:text-2xl font-black text-white">15+</p>
+              <p className="text-xs text-gray-400 mt-1 font-medium">YEARS</p>
             </div>
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-2xl md:text-3xl font-black text-white">6 Stages</p>
-              <p className="text-xs text-gray-300 mt-1 font-medium">LIVE WAR ROOM</p>
+              <p className="text-lg md:text-2xl font-black text-white">6</p>
+              <p className="text-xs text-gray-400 mt-1 font-medium">STAGES</p>
             </div>
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-2xl md:text-3xl font-black text-white">$0→5-Figure</p>
-              <p className="text-xs text-gray-300 mt-1 font-medium">KK&apos;S BUILD</p>
+              <p className="text-lg md:text-2xl font-black text-white">$0→5M</p>
+              <p className="text-xs text-gray-400 mt-1 font-medium">GROWTH</p>
             </div>
           </div>
         </div>
