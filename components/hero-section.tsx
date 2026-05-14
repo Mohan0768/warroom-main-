@@ -106,11 +106,11 @@ export function HeroSection() {
       </div>
 
       {/* Main Content - Image on top, text below with spacing */}
-      <div className="relative z-10 flex flex-col gap-3 lg:gap-4 items-center px-3 sm:px-4 lg:px-8 py-0 lg:py-0 min-h-screen h-screen pt-0">
+      <div className="relative z-10 flex flex-col gap-2 lg:gap-2 items-center px-2 sm:px-3 lg:px-6 py-0 lg:py-0 min-h-screen h-screen pt-2">
         
         {/* Image Section - Top on all devices */}
-        <div className="w-full flex items-center justify-center flex-shrink-0 animate-fadeInUp pt-0 lg:pt-0 flex-1 px-2 sm:px-4">
-          <div className="w-full max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-5xl aspect-video">
+        <div className="w-full flex items-center justify-center flex-shrink-0 animate-fadeInUp pt-0 lg:pt-0 flex-shrink flex-grow-0 px-1 sm:px-2">
+          <div className="w-full max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-4xl aspect-video">
             <img 
               src="/hero-background.jpg"
               alt="Build the thinking"
@@ -120,7 +120,7 @@ export function HeroSection() {
         </div>
 
         {/* Text Section - Bottom on all devices */}
-        <div className="w-full flex flex-col justify-end animate-fadeInUp max-w-4xl mx-auto flex-1" style={{ animationDelay: '0.1s' }}>
+        <div className="w-full flex flex-col justify-end animate-fadeInUp max-w-4xl mx-auto flex-1 pb-4" style={{ animationDelay: '0.1s' }}>
           {/* Main Headline */}
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight text-white mb-1 md:mb-2">
             BUILD THE THINKING YOU WISH YOU LEARNED{' '}
