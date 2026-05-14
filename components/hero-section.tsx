@@ -1,53 +1,145 @@
 'use client'
 
 import Link from 'next/link'
+import { useState, useEffect, useRef } from 'react'
+
+interface Particle {
+  id: number
+  x: number
+  y: number
+  size: number
+  opacity: number
+  vx: number
+  vy: number
+}
 
 export function HeroSection() {
+  const [particles, setParticles] = useState<Particle[]>([])
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
+  const containerRef = useRef<HTMLDivElement>(null)
+  const particleIdRef = useRef(0)
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!containerRef.current) return
+      
+      const rect = containerRef.current.getBoundingClientRect()
+      const x = e.clientX - rect.left
+      const y = e.clientY - rect.top
+
+      setMousePos({ x, y })
+
+      // Create particles at cursor position
+      if (Math.random() > 0.7) {
+        const newParticle: Particle = {
+          id: particleIdRef.current++,
+          x,
+          y,
+          size: Math.random() * 4 + 2,
+          opacity: 0.6,
+          vx: (Math.random() - 0.5) * 2,
+          vy: (Math.random() - 0.5) * 2,
+        }
+        setParticles(prev => [...prev, newParticle].slice(-30))
+      }
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [])
+
+  // Animate particles
+  useEffect(() => {
+    const animationFrame = setInterval(() => {
+      setParticles(prev =>
+        prev
+          .map(p => ({
+            ...p,
+            x: p.x + p.vx,
+            y: p.y + p.vy,
+            opacity: p.opacity - 0.02,
+            vy: p.vy + 0.1, // gravity
+          }))
+          .filter(p => p.opacity > 0)
+      )
+    }, 30)
+
+    return () => clearInterval(animationFrame)
+  }, [])
+
   return (
     <section 
-      className="min-h-screen flex items-center justify-center px-4 sm:px-6 bg-black scroll-smooth relative overflow-hidden"
-      style={{
-        backgroundImage: 'url(/hero-background.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'scroll'
-      }}
+      ref={containerRef}
+      className="relative h-screen bg-black scroll-smooth overflow-hidden"
     >
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/50"></div>
-      
-      <div className="max-w-6xl w-full relative z-10 px-4 md:px-6">
-        <div className="text-center space-y-6 md:space-y-8 animate-fadeInUp">
-          {/* Tagline */}
-          <p className="text-xs md:text-sm font-medium text-gray-300 tracking-wide">
-            KK KANNABIRAN&apos;S humanfirstbykk
-          </p>
+      {/* Cursor glow effect */}
+      <div
+        className="pointer-events-none fixed w-80 h-80 rounded-full transition-opacity duration-200"
+        style={{
+          background: 'radial-gradient(circle, rgba(250,204,21,0.15) 0%, transparent 70%)',
+          left: `${mousePos.x - 160}px`,
+          top: `${mousePos.y - 160}px`,
+          opacity: 0.7,
+          zIndex: 1,
+        }}
+      />
 
-          {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight text-white">
-            BUILD THE THINKING
-            <br />
-            YOU WISH YOU HAD
-            <br />
-            LEARNED{' '}
+      {/* Particles */}
+      <div className="fixed inset-0 pointer-events-none">
+        {particles.map(p => (
+          <div
+            key={p.id}
+            className="fixed rounded-full bg-yellow-400 shadow-lg"
+            style={{
+              left: `${p.x}px`,
+              top: `${p.y}px`,
+              width: `${p.size}px`,
+              height: `${p.size}px`,
+              opacity: p.opacity,
+              pointerEvents: 'none',
+              zIndex: 2,
+              boxShadow: `0 0 ${p.size * 2}px rgba(250,204,21,${p.opacity * 0.8})`,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Top Half - Image Section */}
+      <div className="relative z-10 flex-shrink-0 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-6 md:py-8 animate-fadeInUp">
+        <div className="w-full max-w-6xl">
+          <img 
+            src="/hero-background.jpg"
+            alt="Build the thinking"
+            className="w-full h-auto max-h-72 md:max-h-80 object-cover rounded-lg shadow-2xl"
+          />
+        </div>
+      </div>
+
+      {/* Bottom Half - Text Section */}
+      <div className="relative z-10 flex-grow bg-black flex flex-col justify-start px-4 sm:px-8 lg:px-16 py-6 md:py-8 pb-12 md:pb-16 animate-fadeInUp overflow-y-auto" style={{ animationDelay: '0.1s' }}>
+        <div className="w-full max-w-6xl">
+          {/* Main Headline - Reduced size */}
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-snug text-white mb-3 md:mb-4">
+            BUILD THE THINKING YOU WISH YOU LEARNED{' '}
             <span className="text-yellow-500">EARLIER.</span>
           </h1>
 
-          {/* Description */}
-          <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            In an AI-driven world, how you think determines your career, your direction, and your growth — so you stay in control when the world becomes unpredictable.
-            <br className="hidden sm:block" />
-            <br className="hidden sm:block" />
-            <strong>Entrepreneurial thinking workshops & business simulations</strong> for students and leaders.
+          {/* Description - Reduced size with spacing */}
+          <p className="text-xs sm:text-sm md:text-base text-gray-300 leading-relaxed mb-2">
+            In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center pt-4 animate-fadeInUp" style={{ animationDelay: '0.2s' }} suppressHydrationWarning={true}>
+          <p className="text-xs sm:text-sm md:text-base text-gray-400 font-regular mb-5 md:mb-6">
+            Entrepreneurial thinking workshops & business simulations
+          </p>
+
+          {/* CTA Buttons - More Prominent */}
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
             <a 
               href="https://war-roomdemo.vercel.app/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 md:px-8 py-2 md:py-3 bg-yellow-500 text-black text-sm md:text-base font-medium rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center"
+              className="px-7 md:px-10 py-3 md:py-3.5 bg-yellow-500 text-black text-sm md:text-base font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
             >
               WAR ROOM FREE TRIAL
             </a>
@@ -55,25 +147,25 @@ export function HeroSection() {
               href="https://calendly.com/mohan20051028/new-meeting" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 md:px-8 py-2 md:py-3 border-2 border-yellow-500 text-yellow-500 text-sm md:text-base font-medium rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center"
+              className="px-7 md:px-10 py-3 md:py-3.5 border-2 border-yellow-500 text-yellow-500 text-sm md:text-base font-bold rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
             >
               BOOK A CALL
             </a>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8 pt-8 md:pt-12 text-center animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
+          {/* Stats - Reduced size */}
+          <div className="grid grid-cols-3 gap-6 md:gap-10">
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-2xl sm:text-3xl md:text-4xl font-black text-white">15+</p>
-              <p className="text-xs md:text-sm text-gray-300 mt-2 font-medium">YEARS IN LEADERSHIP DEVELOPMENT</p>
+              <p className="text-lg md:text-2xl font-black text-white">15+</p>
+              <p className="text-xs text-gray-400 mt-1 font-medium">YEARS</p>
             </div>
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-2xl sm:text-3xl md:text-4xl font-black text-white">6 Stages</p>
-              <p className="text-xs md:text-sm text-gray-300 mt-2 font-medium">IN THE LIVE WAR ROOM SIMULATION</p>
+              <p className="text-lg md:text-2xl font-black text-white">6</p>
+              <p className="text-xs text-gray-400 mt-1 font-medium">STAGES</p>
             </div>
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-2xl sm:text-3xl md:text-4xl font-black text-white">$0 → 5-Figure</p>
-              <p className="text-xs md:text-sm text-gray-300 mt-2 font-medium">KK&apos;S OWN BUILD, EXITED TO FOLLOW HER YOU</p>
+              <p className="text-lg md:text-2xl font-black text-white">$0→5M</p>
+              <p className="text-xs text-gray-400 mt-1 font-medium">GROWTH</p>
             </div>
           </div>
         </div>
