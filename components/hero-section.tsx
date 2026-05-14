@@ -76,7 +76,7 @@ export function HeroSection() {
       <div
         className="pointer-events-none fixed w-80 h-80 rounded-full transition-opacity duration-200"
         style={{
-          background: 'radial-gradient(circle, rgba(250,204,21,0.15) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(217,119,6,0.15) 0%, transparent 70%)',
           left: `${mousePos.x - 160}px`,
           top: `${mousePos.y - 160}px`,
           opacity: 0.7,
@@ -89,8 +89,9 @@ export function HeroSection() {
         {particles.map(p => (
           <div
             key={p.id}
-            className="fixed rounded-full bg-yellow-400 shadow-lg"
+            className="fixed rounded-full shadow-lg"
             style={{
+              backgroundColor: 'rgb(217,119,6)',
               left: `${p.x}px`,
               top: `${p.y}px`,
               width: `${p.size}px`,
@@ -98,7 +99,7 @@ export function HeroSection() {
               opacity: p.opacity,
               pointerEvents: 'none',
               zIndex: 2,
-              boxShadow: `0 0 ${p.size * 2}px rgba(250,204,21,${p.opacity * 0.8})`,
+              boxShadow: `0 0 ${p.size * 2}px rgba(217,119,6,${p.opacity * 0.8})`,
             }}
           />
         ))}
@@ -121,7 +122,7 @@ export function HeroSection() {
           {/* Main Headline - Reduced size */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-snug text-white mb-3 md:mb-4">
             BUILD THE THINKING YOU WISH YOU LEARNED{' '}
-            <span className="text-yellow-500">EARLIER.</span>
+            <span style={{ color: 'rgb(217,119,6)' }}>EARLIER.</span>
           </h1>
 
           {/* Description - Reduced size with spacing */}
@@ -134,12 +135,13 @@ export function HeroSection() {
           </p>
 
           {/* CTA Buttons - More Prominent */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12 mt-8">
             <a 
               href="https://war-roomdemo.vercel.app/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-7 md:px-10 py-3 md:py-3.5 bg-yellow-500 text-black text-sm md:text-base font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
+              className="px-7 md:px-10 py-3 md:py-3.5 text-black text-sm md:text-base font-bold rounded transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
+              style={{ backgroundColor: 'rgb(217,119,6)' }}
             >
               WAR ROOM FREE TRIAL
             </a>
@@ -147,7 +149,16 @@ export function HeroSection() {
               href="https://calendly.com/mohan20051028/new-meeting" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-7 md:px-10 py-3 md:py-3.5 border-2 border-yellow-500 text-yellow-500 text-sm md:text-base font-bold rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
+              className="px-7 md:px-10 py-3 md:py-3.5 border-2 text-sm md:text-base font-bold rounded transition-all duration-300 hover:text-black hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
+              style={{ borderColor: 'rgb(217,119,6)', color: 'rgb(217,119,6)', backgroundColor: 'transparent' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgb(217,119,6)'
+                e.currentTarget.style.color = 'black'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'transparent'
+                e.currentTarget.style.color = 'rgb(217,119,6)'
+              }}
             >
               BOOK A CALL
             </a>
