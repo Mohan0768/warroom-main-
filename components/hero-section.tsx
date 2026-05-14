@@ -105,18 +105,18 @@ export function HeroSection() {
       </div>
 
       {/* Top Half - Image Section */}
-      <div className="relative z-10 h-1/2 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 animate-fadeInUp">
+      <div className="relative z-10 flex-shrink-0 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-6 md:py-8 animate-fadeInUp">
         <div className="w-full max-w-6xl">
           <img 
             src="/hero-background.jpg"
             alt="Build the thinking"
-            className="w-full h-auto max-h-80 md:max-h-96 object-cover rounded-lg shadow-2xl"
+            className="w-full h-auto max-h-72 md:max-h-80 object-cover rounded-lg shadow-2xl"
           />
         </div>
       </div>
 
       {/* Bottom Half - Text Section */}
-      <div className="relative z-10 h-1/2 bg-black flex flex-col justify-start px-4 sm:px-8 lg:px-16 pt-6 md:pt-8 animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+      <div className="relative z-10 flex-grow bg-black flex flex-col justify-start px-4 sm:px-8 lg:px-16 py-6 md:py-8 pb-12 md:pb-16 animate-fadeInUp overflow-y-auto" style={{ animationDelay: '0.1s' }}>
         <div className="w-full max-w-6xl">
           {/* Main Headline - Reduced size */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-snug text-white mb-3 md:mb-4">
