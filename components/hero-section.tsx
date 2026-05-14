@@ -128,7 +128,6 @@ export function HeroSection() {
           </h1>
 
           {/* Description */}
-          <h1>
           <p className="text-xs text-gray-300 leading-relaxed mb-1 text-center">
             In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
@@ -167,20 +166,13 @@ export function HeroSection() {
             </a>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-3 md:gap-6 mt-2 w-full max-w-md">
-            <div className="transition-all duration-300 hover:scale-105 text-center">
-              <p className="text-sm md:text-lg font-black text-white">15+</p>
-              <p className="text-xs text-gray-400 mt-0.5 font-medium">YEARS</p>
-            </div>
-            <div className="transition-all duration-300 hover:scale-105 text-center">
-              <p className="text-sm md:text-lg font-black text-white">6</p>
-              <p className="text-xs text-gray-400 mt-0.5 font-medium">STAGES</p>
-            </div>
-            <div className="transition-all duration-300 hover:scale-105 text-center">
-              <p className="text-sm md:text-lg font-black text-white">$0→5M</p>
-              <p className="text-xs text-gray-400 mt-0.5 font-medium">GROWTH</p>
-            </div>
+          {/* Credentials Image */}
+          <div className="w-full max-w-3xl mt-4 transition-all duration-300 hover:scale-105">
+            <img 
+              src="/credentials-bar.png"
+              alt="15+ Years Training Leaders, $0 to 5-Figure, Founder of 3 Companies - Brandon Hall Group Awards"
+              className="w-full h-auto object-contain"
+            />
           </div>
         </div>
       </div>
