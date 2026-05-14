@@ -6,28 +6,28 @@ export function OfferingsSection() {
       title: 'WAR ROOM',
       subtitle: 'Live Business Simulation',
       description: 'A 6-stage intensive simulation where you build a business from scratch, make real decisions, and experience the consequences in a risk-free environment.',
-      color: 'bg-black',
-      textColor: 'text-white',
-      buttonColor: 'text-black',
-      buttonStyle: { backgroundColor: '#F4C430' }
+      color: '#FFC107',
+      textColor: 'text-gray-900',
+      buttonColor: 'text-white',
+      buttonStyle: { backgroundColor: '#1a1a1a' }
     },
     {
       title: 'Start With',
       subtitle: 'YOU — Keynote',
       description: 'Transform how you think about your future. This keynote helps leaders and students understand their power in an AI-driven world.',
-      color: '#F4C430',
-      textColor: 'text-black',
+      color: '#FFC107',
+      textColor: 'text-gray-900',
       buttonColor: 'text-white',
-      buttonStyle: { backgroundColor: 'black' }
+      buttonStyle: { backgroundColor: '#1a1a1a' }
     },
     {
       title: 'The Garage',
       subtitle: 'Build from $0 in 3 Days',
       description: 'An intensive 3-day entrepreneurial sprint where you learn to validate ideas, build MVPs, and think like a founder.',
-      color: '#F4C430',
-      textColor: 'text-black',
+      color: '#FFC107',
+      textColor: 'text-gray-900',
       buttonColor: 'text-white',
-      buttonStyle: { backgroundColor: 'black' }
+      buttonStyle: { backgroundColor: '#1a1a1a' }
     }
   ]
 

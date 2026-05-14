@@ -34,8 +34,8 @@ export default function StartWithYouPage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 text-black font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
-              style={{ backgroundColor: 'rgb(217,119,6)' }}
+              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 text-gray-900 font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
+              style={{ backgroundColor: '#FFC107' }}
             >
               PRE BUSINESS SESSION
             </a>
@@ -43,8 +43,8 @@ export default function StartWithYouPage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base hover:text-black"
-              style={{ borderColor: 'rgb(217,119,6)', color: 'rgb(217,119,6)', backgroundColor: 'transparent' }}
+              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base hover:text-gray-900"
+              style={{ borderColor: '#FFC107', color: '#FFC107', backgroundColor: 'transparent' }}
             >
               CAMPUS FREE SESSION
             </a>
@@ -53,7 +53,7 @@ export default function StartWithYouPage() {
       </section>
 
       {/* Hero Text Section */}
-      <section className="py-10 md:py-14 px-4 md:px-6 text-black" style={{ backgroundColor: 'rgb(217,119,6)' }}>
+      <section className="py-10 md:py-14 px-4 md:px-6 text-gray-900" style={{ backgroundColor: '#FFC107' }}>
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-3 md:mb-4">
             Start With YOU

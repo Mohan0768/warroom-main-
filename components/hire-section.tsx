@@ -87,7 +87,7 @@ export function HireSection() {
         <div className="space-y-12">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-4">
-              <span style={{ color: 'rgb(217,119,6)' }}>Let&apos;s build the room.</span>
+              <span style={{ color: '#FFC107' }}>Let&apos;s build the room.</span>
             </h2>
           </div>
 
@@ -117,8 +117,8 @@ export function HireSection() {
                     placeholder="John Doe"
                     className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 transition-all duration-300 ${
                       errors.name 
-                        ? 'border-amber-600 focus:border-amber-700 focus:ring-amber-100' 
-                        : 'border-gray-300 focus:border-amber-600 focus:ring-amber-100'
+                        ? 'border-yellow-600 focus:border-yellow-700 focus:ring-yellow-100' 
+                        : 'border-gray-300 focus:border-yellow-400 focus:ring-yellow-50'
                     }`}
                     required
                   />
@@ -136,8 +136,8 @@ export function HireSection() {
                     placeholder="john@example.com"
                     className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 transition-all duration-300 ${
                       errors.email 
-                        ? 'border-amber-600 focus:border-amber-700 focus:ring-amber-100' 
-                        : 'border-gray-300 focus:border-amber-600 focus:ring-amber-100'
+                        ? 'border-yellow-600 focus:border-yellow-700 focus:ring-yellow-100' 
+                        : 'border-gray-300 focus:border-yellow-400 focus:ring-yellow-50'
                     }`}
                     required
                   />
@@ -157,8 +157,8 @@ export function HireSection() {
                   placeholder="Your Company"
                   className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 transition-all duration-300 ${
                     errors.organization 
-                      ? 'border-amber-600 focus:border-amber-700 focus:ring-amber-100' 
-                      : 'border-gray-300 focus:border-amber-600 focus:ring-amber-100'
+                      ? 'border-yellow-600 focus:border-yellow-700 focus:ring-yellow-100' 
+                      : 'border-gray-300 focus:border-yellow-400 focus:ring-yellow-50'
                   }`}
                   required
                 />
@@ -177,8 +177,8 @@ export function HireSection() {
                   rows={4}
                   className={`w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 transition-all duration-300 ${
                     errors.event 
-                      ? 'border-amber-600 focus:border-amber-700 focus:ring-amber-100' 
-                      : 'border-gray-300 focus:border-amber-600 focus:ring-amber-100'
+                      ? 'border-yellow-600 focus:border-yellow-700 focus:ring-yellow-100' 
+                      : 'border-gray-300 focus:border-yellow-400 focus:ring-yellow-50'
                   }`}
                   required
                 />
@@ -188,14 +188,14 @@ export function HireSection() {
               <button 
                 type="submit"
                 disabled={loading}
-                className="px-6 md:px-8 py-2 md:py-3 text-black font-medium rounded disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300 hover:shadow-lg hover:scale-105"
-                style={{ backgroundColor: 'rgb(217,119,6)' }}
+                className="px-6 md:px-8 py-2 md:py-3 text-gray-900 font-medium rounded disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300 hover:shadow-lg hover:scale-105"
+                style={{ backgroundColor: '#FFC107' }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = 'rgb(180,97,5)'
+                  e.currentTarget.style.backgroundColor = '#FFB800'
                 }}
                 onMouseLeave={(e) => {
                   if (!loading) {
-                    e.currentTarget.style.backgroundColor = 'rgb(217,119,6)'
+                    e.currentTarget.style.backgroundColor = '#FFC107'
                   }
                 }}
               >

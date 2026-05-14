@@ -8,7 +8,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-black border-b border-gray-800 transition-all duration-300">
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-200 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 transition-all duration-300">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -25,18 +25,18 @@ export function Header() {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-6 lg:gap-8">
-            <Link href="/" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">HOME</Link>
-            <a href="https://v0-gaming-website-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">WAR ROOM</a>
-            <Link href="/start-with-you" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">START WITH YOU</Link>
-            <Link href="/the-garage" className="text-xs md:text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">THE GARAGE</Link>
+            <Link href="/" className="text-xs md:text-sm font-medium text-gray-700 hover:text-amber-500 transition-colors duration-300">HOME</Link>
+            <a href="https://v0-gaming-website-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm font-medium text-gray-700 hover:text-amber-500 transition-colors duration-300">WAR ROOM</a>
+            <Link href="/start-with-you" className="text-xs md:text-sm font-medium text-gray-700 hover:text-amber-500 transition-colors duration-300">START WITH YOU</Link>
+            <Link href="/the-garage" className="text-xs md:text-sm font-medium text-gray-700 hover:text-amber-500 transition-colors duration-300">THE GARAGE</Link>
           </nav>
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-2 lg:gap-3">
-            <a href="https://warroom-frontend-410969764896.us-central1.run.app/" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 text-black text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#F4C430' }}>
+            <a href="https://warroom-frontend-410969764896.us-central1.run.app/" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 text-gray-900 text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#FFC107' }}>
               ENTER WAR ROOM
             </a>
-            <a href="https://calendly.com/mohan20051028/new-meeting" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 text-black text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#F4C430' }}>
+            <a href="https://calendly.com/mohan20051028/new-meeting" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 text-gray-900 text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#FFC107' }}>
               BOOK A CALL
             </a>
           </div>
@@ -56,11 +56,11 @@ export function Header() {
         {/* Mobile Menu */}
         {isOpen && (
           <nav className="md:hidden mt-4 flex flex-col gap-4 pb-4 animate-fadeIn">
-            <Link href="/" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">HOME</Link>
-            <a href="https://v0-gaming-website-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">WAR ROOM</a>
-            <Link href="/start-with-you" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">START WITH YOU</Link>
-            <Link href="/the-garage" className="text-sm font-medium text-gray-300 hover:text-yellow-400 transition-colors duration-300">THE GARAGE</Link>
-            <a href="https://calendly.com/mohan20051028/new-meeting" target="_blank" rel="noopener noreferrer" className="px-6 py-2 text-black text-sm font-medium rounded w-fit transition-all duration-300 hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#F4C430' }}>
+            <Link href="/" className="text-sm font-medium text-gray-700 hover:text-amber-500 transition-colors duration-300">HOME</Link>
+            <a href="https://v0-gaming-website-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-gray-700 hover:text-amber-500 transition-colors duration-300">WAR ROOM</a>
+            <Link href="/start-with-you" className="text-sm font-medium text-gray-700 hover:text-amber-500 transition-colors duration-300">START WITH YOU</Link>
+            <Link href="/the-garage" className="text-sm font-medium text-gray-700 hover:text-amber-500 transition-colors duration-300">THE GARAGE</Link>
+            <a href="https://calendly.com/mohan20051028/new-meeting" target="_blank" rel="noopener noreferrer" className="px-6 py-2 text-gray-900 text-sm font-medium rounded w-fit transition-all duration-300 hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#FFC107' }}>
               BOOK A CALL
             </a>
           </nav>

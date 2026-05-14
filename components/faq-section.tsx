@@ -48,7 +48,7 @@ export function FAQSection() {
                 <span className="text-left text-sm md:text-base font-medium text-gray-900">
                   {faq.question}
                 </span>
-                <span className={`text-2xl flex-shrink-0 ml-4 transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`} style={{ color: 'rgb(217,119,6)' }}>
+                <span className={`text-2xl flex-shrink-0 ml-4 transition-transform duration-300 ${openIndex === idx ? 'rotate-180' : ''}`} style={{ color: '#FFC107' }}>
                   {openIndex === idx ? '−' : '+'}
                 </span>
               </button>
@@ -70,8 +70,8 @@ export function FAQSection() {
             href="https://www.instagram.com/kkkannabiran/?hl=en"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90"
-            style={{ backgroundColor: 'rgb(217,119,6)' }}
+            className="inline-block px-6 md:px-8 py-2 md:py-3 text-gray-900 text-sm md:text-base font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90"
+            style={{ backgroundColor: '#FFC107' }}
           >
             GET IN TOUCH
           </Link>

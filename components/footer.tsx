@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white py-12 md:py-16 px-4 md:px-6">
+    <footer className="bg-gray-900 text-white py-12 md:py-16 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
           {/* Brand */}
@@ -75,8 +75,8 @@ export function Footer() {
             </h2>
             <Link 
               href="#"
-              className="px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90 whitespace-nowrap"
-              style={{ backgroundColor: '#F4C430' }}
+              className="px-6 md:px-8 py-2 md:py-3 text-gray-900 text-sm md:text-base font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90 whitespace-nowrap"
+              style={{ backgroundColor: '#FFC107' }}
             >
               BOOK A CALL
             </Link>
