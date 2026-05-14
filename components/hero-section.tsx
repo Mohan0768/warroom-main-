@@ -70,7 +70,7 @@ export function HeroSection() {
   return (
     <section 
       ref={containerRef}
-      className="relative min-h-screen bg-black scroll-smooth overflow-x-hidden"
+      className="relative min-h-[auto] lg:min-h-screen bg-black scroll-smooth overflow-x-hidden"
     >
       {/* Cursor glow effect */}
       <div
@@ -106,11 +106,11 @@ export function HeroSection() {
       </div>
 
       {/* Main Content - Image on top, text below with spacing */}
-      <div className="relative z-10 flex flex-col gap-2 lg:gap-2 items-center px-2 sm:px-3 lg:px-6 py-0 lg:py-0 min-h-screen h-screen pt-2">
+      <div className="relative z-10 flex flex-col gap-2 lg:gap-2 items-center px-4 sm:px-6 lg:px-6 py-0 lg:py-0 min-h-[auto] lg:min-h-screen lg:h-screen pt-2">
         
         {/* Image Section - Top on all devices */}
         <div className="w-full flex items-center justify-center flex-shrink-0 animate-fadeInUp pt-0 lg:pt-0 flex-shrink flex-grow-0 px-1 sm:px-2">
-          <div className="w-full max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-4xl aspect-video">
+          <div className="w-full max-w-[280px] sm:max-w-sm md:max-w-xl lg:max-w-4xl aspect-video">
             <img 
               src="/hero-background.jpg"
               alt="Build the thinking"
@@ -120,7 +120,7 @@ export function HeroSection() {
         </div>
 
         {/* Text Section - Bottom on all devices */}
-        <div className="w-full flex flex-col justify-end animate-fadeInUp max-w-4xl mx-auto flex-1 pb-4" style={{ animationDelay: '0.1s' }}>
+        <div className="w-full flex flex-col justify-start lg:justify-end animate-fadeInUp max-w-4xl mx-auto flex-none lg:flex-1 pb-4" style={{ animationDelay: '0.1s' }}>
           {/* Main Headline */}
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight text-white mb-1 md:mb-2">
             BUILD THE THINKING YOU WISH YOU LEARNED{' '}
