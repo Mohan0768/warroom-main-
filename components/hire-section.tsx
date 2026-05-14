@@ -109,7 +109,7 @@ export function HireSection() {
                   <label className="block text-sm font-medium text-gray-900 mb-2">
                     Your Name
                   </label>
-                  <                  <input 
+                  <input 
                     type="text"
                     name="name"
                     value={formData.name}
