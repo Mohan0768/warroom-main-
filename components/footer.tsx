@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 
 export function Footer() {
@@ -73,7 +75,8 @@ export function Footer() {
             </h2>
             <Link 
               href="#"
-              className="px-6 md:px-8 py-2 md:py-3 bg-yellow-500 text-black text-sm md:text-base font-medium rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-lg hover:scale-105 whitespace-nowrap"
+              className="px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90 whitespace-nowrap"
+              style={{ backgroundColor: '#F4C430' }}
             >
               BOOK A CALL
             </Link>

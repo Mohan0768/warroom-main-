@@ -13,7 +13,7 @@ export default function TheGaragePage() {
       <Header />
 
       {/* Hero */}
-      <section className="py-16 md:py-20 px-4 md:px-6 bg-yellow-500 text-black">
+      <section className="py-16 md:py-20 px-4 md:px-6 text-black" style={{ backgroundColor: 'rgb(217,119,6)' }}>
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-4 md:mb-6">
             The Garage
@@ -45,19 +45,19 @@ export default function TheGaragePage() {
             <h2 className="text-4xl font-black">The 3-Day Schedule</h2>
             <div className="space-y-6">
               <div className="bg-gray-50 p-6 rounded-lg space-y-3">
-                <h3 className="text-2xl font-black text-yellow-500">Day 1: Ideation & Validation</h3>
+                <h3 className="text-2xl font-black" style={{ color: 'rgb(217,119,6)' }}>Day 1: Ideation & Validation</h3>
                 <p className="text-gray-700">
                   Learn the fundamentals of finding a real problem. Test your assumptions with actual customers. Understand what makes an idea worth pursuing.
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg space-y-3">
-                <h3 className="text-2xl font-black text-yellow-500">Day 2: Building Your MVP</h3>
+                <h3 className="text-2xl font-black" style={{ color: 'rgb(217,119,6)' }}>Day 2: Building Your MVP</h3>
                 <p className="text-gray-700">
                   Create a minimum viable product that proves your concept works. Use no-code tools, scrappy approaches, and rapid prototyping. Speed over perfection.
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg space-y-3">
-                <h3 className="text-2xl font-black text-yellow-500">Day 3: Pitch & Go-to-Market</h3>
+                <h3 className="text-2xl font-black" style={{ color: 'rgb(217,119,6)' }}>Day 3: Pitch & Go-to-Market</h3>
                 <p className="text-gray-700">
                   Present your idea to investors, customers, and mentors. Develop your go-to-market strategy. Learn how to position your idea for success.
                 </p>
@@ -70,19 +70,19 @@ export default function TheGaragePage() {
             <h2 className="text-4xl font-black">Skills You'll Master</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-2">
-                <h3 className="text-lg font-bold text-yellow-500">Problem Validation</h3>
+                <h3 className="text-lg font-bold" style={{ color: 'rgb(217,119,6)' }}>Problem Validation</h3>
                 <p className="text-gray-700">Learn how to talk to customers and truly understand their pain points.</p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-lg font-bold text-yellow-500">Rapid Prototyping</h3>
+                <h3 className="text-lg font-bold" style={{ color: 'rgb(217,119,6)' }}>Rapid Prototyping</h3>
                 <p className="text-gray-700">Build and iterate quickly. Get feedback. Pivot based on data, not gut feel.</p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-lg font-bold text-yellow-500">Founder Mindset</h3>
+                <h3 className="text-lg font-bold" style={{ color: 'rgb(217,119,6)' }}>Founder Mindset</h3>
                 <p className="text-gray-700">Develop the resilience, creativity, and bias for action that founders need.</p>
               </div>
               <div className="space-y-2">
-                <h3 className="text-lg font-bold text-yellow-500">Pitch & Communication</h3>
+                <h3 className="text-lg font-bold" style={{ color: 'rgb(217,119,6)' }}>Pitch & Communication</h3>
                 <p className="text-gray-700">Tell your story in a way that compels investors, partners, and customers.</p>
               </div>
             </div>
@@ -93,19 +93,19 @@ export default function TheGaragePage() {
             <h2 className="text-4xl font-black">Who Should Apply</h2>
             <ul className="space-y-4 text-lg text-gray-700">
               <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
+                <span className="font-bold mt-1" style={{ color: 'rgb(217,119,6)' }}>•</span>
                 <span>Aspiring founders wanting to test an idea without risking everything</span>
               </li>
               <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
+                <span className="font-bold mt-1" style={{ color: 'rgb(217,119,6)' }}>•</span>
                 <span>Corporate employees wanting to develop entrepreneurial skills</span>
               </li>
               <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
+                <span className="font-bold mt-1" style={{ color: 'rgb(217,119,6)' }}>•</span>
                 <span>Students wanting real-world startup experience</span>
               </li>
               <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
+                <span className="font-bold mt-1" style={{ color: 'rgb(217,119,6)' }}>•</span>
                 <span>Anyone curious about what it takes to build a business</span>
               </li>
             </ul>
@@ -114,26 +114,26 @@ export default function TheGaragePage() {
           {/* Outcomes */}
           <div className="space-y-6">
             <h2 className="text-4xl font-black">What You'll Leave With</h2>
-            <div className="bg-yellow-50 p-8 rounded-lg space-y-4">
+            <div className="p-8 rounded-lg space-y-4" style={{ backgroundColor: 'rgba(217,119,6,0.1)', borderLeft: '4px solid rgb(217,119,6)' }}>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
+                  <span style={{ color: 'rgb(217,119,6)' }}>✓</span>
                   <span>A validated (or invalidated) business idea</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
+                  <span style={{ color: 'rgb(217,119,6)' }}>✓</span>
                   <span>A functioning MVP you can show to others</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
+                  <span style={{ color: 'rgb(217,119,6)' }}>✓</span>
                   <span>Customer insights and feedback</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
+                  <span style={{ color: 'rgb(217,119,6)' }}>✓</span>
                   <span>A clear next-steps strategy</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
+                  <span style={{ color: 'rgb(217,119,6)' }}>✓</span>
                   <span>Network of fellow founders and mentors</span>
                 </li>
               </ul>
@@ -150,7 +150,8 @@ export default function TheGaragePage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 md:px-8 py-2 md:py-3 bg-yellow-500 text-black text-sm md:text-base font-medium rounded hover:bg-yellow-600 transition-all duration-300 hover:scale-105"
+              className="inline-block px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-medium rounded transition-all duration-300 hover:scale-105 hover:opacity-90"
+              style={{ backgroundColor: 'rgb(217,119,6)' }}
             >
               BOOK A MEETING
             </a>

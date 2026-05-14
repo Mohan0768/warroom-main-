@@ -1,3 +1,5 @@
+'use client'
+
 export function QuoteSection() {
   return (
     <section className="py-16 md:py-24 px-4 md:px-6 bg-black text-white">
@@ -7,7 +9,7 @@ export function QuoteSection() {
           <br />
           has prepared you to ask."
         </blockquote>
-        <p className="text-sm font-medium text-yellow-500 tracking-wide">— KK KANNABIRAN</p>
+        <p className="text-sm font-medium tracking-wide" style={{ color: 'rgb(217,119,6)' }}>— KK KANNABIRAN</p>
       </div>
     </section>
   )

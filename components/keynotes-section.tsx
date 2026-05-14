@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -24,24 +26,24 @@ export function KeynotesSection() {
           {/* Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <p className="text-xs font-semibold text-yellow-500 tracking-widest">SPEAKING ENGAGEMENTS</p>
+              <p className="text-xs font-semibold tracking-widest" style={{ color: 'rgb(217,119,6)' }}>SPEAKING ENGAGEMENTS</p>
               <ul className="space-y-3 text-sm text-gray-700">
                 <li className="flex gap-3">
-                  <span className="font-bold text-yellow-500 mt-1">•</span>
+                  <span className="font-bold mt-1" style={{ color: 'rgb(217,119,6)' }}>•</span>
                   <span>Fortune 500 companies looking to upskill their workforce in entrepreneurial thinking</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="font-bold text-yellow-500 mt-1">•</span>
+                  <span className="font-bold mt-1" style={{ color: 'rgb(217,119,6)' }}>•</span>
                   <span>Business schools and universities preparing students for the AI era</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="font-bold text-yellow-500 mt-1">•</span>
+                  <span className="font-bold mt-1" style={{ color: 'rgb(217,119,6)' }}>•</span>
                   <span>Leadership conferences and corporate retreats</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-gray-50 border-l-4 border-yellow-500 p-6 space-y-4">
+            <div className="bg-gray-50 p-6 space-y-4" style={{ borderLeft: '4px solid rgb(217,119,6)' }}>
               <p className="text-sm font-semibold text-gray-900">
                 "Working with KK transformed how our team thinks about innovation and change."
               </p>

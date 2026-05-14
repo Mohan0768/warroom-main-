@@ -36,25 +36,25 @@ export default function WarRoomPage() {
             <h2 className="text-3xl md:text-4xl font-black">What You'll Experience</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
               <div className="space-y-4">
-                <h3 className="text-lg md:text-xl font-bold text-yellow-500">6 Intensive Stages</h3>
+                <h3 className="text-lg md:text-xl font-bold" style={{ color: 'rgb(217,119,6)' }}>6 Intensive Stages</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Progress through each stage of building and scaling a business, from ideation to market expansion. Each stage presents new challenges and opportunities.
                 </p>
               </div>
               <div className="space-y-4">
-                <h3 className="text-lg md:text-xl font-bold text-yellow-500">Real Decision Making</h3>
+                <h3 className="text-lg md:text-xl font-bold" style={{ color: 'rgb(217,119,6)' }}>Real Decision Making</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Make actual strategic decisions about pricing, marketing, hiring, and growth. See how your choices impact your business outcomes in real time.
                 </p>
               </div>
               <div className="space-y-4">
-                <h3 className="text-lg md:text-xl font-bold text-yellow-500">Consequence-Driven Learning</h3>
+                <h3 className="text-lg md:text-xl font-bold" style={{ color: 'rgb(217,119,6)' }}>Consequence-Driven Learning</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Understand cause and effect in business. Every decision has consequences—learn without the financial risk of real failure.
                 </p>
               </div>
               <div className="space-y-4">
-                <h3 className="text-lg md:text-xl font-bold text-yellow-500">Risk-Free Environment</h3>
+                <h3 className="text-lg md:text-xl font-bold" style={{ color: 'rgb(217,119,6)' }}>Risk-Free Environment</h3>
                 <p className="text-gray-700 leading-relaxed">
                   Make mistakes, learn from them, and iterate. This is a safe space to experiment with entrepreneurial thinking and test new ideas.
                 </p>
@@ -67,19 +67,19 @@ export default function WarRoomPage() {
             <h2 className="text-3xl md:text-4xl font-black">Perfect For</h2>
             <ul className="space-y-4 text-base md:text-lg text-gray-700">
               <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
+                <span className="font-bold mt-1" style={{ color: 'rgb(217,119,6)' }}>•</span>
                 <span>Students wanting hands-on entrepreneurial experience before starting a company</span>
               </li>
               <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
+                <span className="font-bold mt-1" style={{ color: 'rgb(217,119,6)' }}>•</span>
                 <span>Business professionals looking to enhance their strategic thinking</span>
               </li>
               <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
+                <span className="font-bold mt-1" style={{ color: 'rgb(217,119,6)' }}>•</span>
                 <span>Teams wanting to align on business fundamentals and decision-making</span>
               </li>
               <li className="flex items-start gap-4">
-                <span className="text-yellow-500 font-bold mt-1">•</span>
+                <span className="font-bold mt-1" style={{ color: 'rgb(217,119,6)' }}>•</span>
                 <span>Organizations preparing employees for an AI-driven, entrepreneurial future</span>
               </li>
             </ul>
@@ -88,25 +88,25 @@ export default function WarRoomPage() {
           {/* Benefits */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-black">Key Benefits</h2>
-            <div className="bg-yellow-50 p-6 md:p-8 rounded-lg space-y-4">
+            <div className="p-6 md:p-8 rounded-lg space-y-4" style={{ backgroundColor: 'rgba(217,119,6,0.1)', borderLeft: '4px solid rgb(217,119,6)' }}>
               <p className="text-gray-700 leading-relaxed">
                 The WAR ROOM transforms how people think about business. Participants leave with:
               </p>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
+                  <span style={{ color: 'rgb(217,119,6)' }}>✓</span>
                   <span>Deeper understanding of business mechanics and strategy</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
+                  <span style={{ color: 'rgb(217,119,6)' }}>✓</span>
                   <span>Confidence to think like an entrepreneur</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
+                  <span style={{ color: 'rgb(217,119,6)' }}>✓</span>
                   <span>Practical skills in decision-making under uncertainty</span>
                 </li>
                 <li className="flex gap-3">
-                  <span className="text-yellow-500">✓</span>
+                  <span style={{ color: 'rgb(217,119,6)' }}>✓</span>
                   <span>Understanding of how AI impacts business strategy</span>
                 </li>
               </ul>
@@ -123,7 +123,8 @@ export default function WarRoomPage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 md:px-8 py-2 md:py-3 bg-yellow-500 text-black text-sm md:text-base font-medium rounded hover:bg-yellow-600 transition-all duration-300 hover:scale-105"
+              className="inline-block px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-medium rounded transition-all duration-300 hover:scale-105 hover:opacity-90"
+              style={{ backgroundColor: 'rgb(217,119,6)' }}
             >
               BOOK A MEETING
             </a>
