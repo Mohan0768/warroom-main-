@@ -148,7 +148,7 @@ export default function StartWithYouPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-black font-bold rounded hover:bg-amber-700 transition-all duration-300 hover:scale-105"
               >
-                👉 Book a pre-session call
+                 Book a pre-session call
               </a>
             </div>
 

@@ -18,7 +18,7 @@ export function WarRoomAudio() {
     <>
       <audio
         ref={audioRef}
-        src="/war-thunder.mp3"
+        src="/cold-space.mp3"
         autoPlay
         loop
         preload="auto"
