@@ -70,7 +70,7 @@ export function HeroSection() {
   return (
     <section 
       ref={containerRef}
-      className="relative h-screen bg-black scroll-smooth overflow-hidden"
+      className="relative min-h-screen bg-black scroll-smooth overflow-x-hidden"
     >
       {/* Cursor glow effect */}
       <div
@@ -105,27 +105,29 @@ export function HeroSection() {
         ))}
       </div>
 
-      {/* Top Half - Image Section */}
-      <div className="relative z-10 flex-shrink-0 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-6 md:py-8 animate-fadeInUp">
-        <div className="w-full max-w-6xl">
-          <img 
-            src="/hero-background.jpg"
-            alt="Build the thinking"
-            className="w-full h-auto max-h-72 md:max-h-80 object-cover rounded-lg shadow-2xl"
-          />
+      {/* Main Content - Flex layout for desktop, stacked for mobile */}
+      <div className="relative z-10 flex flex-col lg:flex-row gap-6 lg:gap-8 items-center lg:items-start px-4 sm:px-6 lg:px-16 py-8 lg:py-12 min-h-screen lg:min-h-auto">
+        
+        {/* Image Section - Left on desktop, top on mobile */}
+        <div className="w-full lg:w-1/2 flex items-center justify-center flex-shrink-0 animate-fadeInUp">
+          <div className="w-full max-w-md lg:max-w-lg">
+            <img 
+              src="/hero-background.jpg"
+              alt="Build the thinking"
+              className="w-full h-auto rounded-lg shadow-2xl"
+            />
+          </div>
         </div>
-      </div>
 
-      {/* Bottom Half - Text Section */}
-      <div className="relative z-10 flex-grow bg-black flex flex-col justify-start px-4 sm:px-8 lg:px-16 py-6 md:py-8 pb-12 md:pb-16 animate-fadeInUp overflow-y-auto" style={{ animationDelay: '0.1s' }}>
-        <div className="w-full max-w-6xl">
-          {/* Main Headline - Reduced size */}
+        {/* Text Section - Right on desktop, bottom on mobile */}
+        <div className="w-full lg:w-1/2 flex flex-col justify-start animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+          {/* Main Headline */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-snug text-white mb-3 md:mb-4">
             BUILD THE THINKING YOU WISH YOU LEARNED{' '}
             <span style={{ color: 'rgb(217,119,6)' }}>EARLIER.</span>
           </h1>
 
-          {/* Description - Reduced size with spacing */}
+          {/* Description */}
           <p className="text-xs sm:text-sm md:text-base text-gray-300 leading-relaxed mb-2">
             In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
@@ -134,8 +136,8 @@ export function HeroSection() {
             Entrepreneurial thinking workshops & business simulations
           </p>
 
-          {/* CTA Buttons - More Prominent */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12 mt-8">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12 mt-6 lg:mt-8">
             <a 
               href="https://war-roomdemo.vercel.app/" 
               target="_blank"
@@ -164,7 +166,7 @@ export function HeroSection() {
             </a>
           </div>
 
-          {/* Stats - Reduced size */}
+          {/* Stats */}
           <div className="grid grid-cols-3 gap-6 md:gap-10">
             <div className="transition-all duration-300 hover:scale-105">
               <p className="text-lg md:text-2xl font-black text-white">15+</p>
