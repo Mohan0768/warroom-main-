@@ -43,7 +43,7 @@ export function AboutSection() {
               <br />
               to control — through
               <br />
-              <span style={{ color: 'rgb(217,119,6)' }}>entrepreneurial thinking.</span>
+              <span style={{ color: '#F4C430' }}>entrepreneurial thinking.</span>
             </h2>
 
             <div className="space-y-6 text-gray-700 text-base leading-relaxed">

@@ -76,7 +76,7 @@ export function HeroSection() {
       <div
         className="pointer-events-none fixed w-80 h-80 rounded-full transition-opacity duration-200"
         style={{
-          background: 'radial-gradient(circle, rgba(217,119,6,0.15) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(244,196,48,0.15) 0%, transparent 70%)',
           left: `${mousePos.x - 160}px`,
           top: `${mousePos.y - 160}px`,
           opacity: 0.7,
@@ -91,7 +91,7 @@ export function HeroSection() {
             key={p.id}
             className="fixed rounded-full shadow-lg"
             style={{
-              backgroundColor: 'rgb(217,119,6)',
+              backgroundColor: '#F4C430',
               left: `${p.x}px`,
               top: `${p.y}px`,
               width: `${p.size}px`,
@@ -99,7 +99,7 @@ export function HeroSection() {
               opacity: p.opacity,
               pointerEvents: 'none',
               zIndex: 2,
-              boxShadow: `0 0 ${p.size * 2}px rgba(217,119,6,${p.opacity * 0.8})`,
+              boxShadow: `0 0 ${p.size * 2}px rgba(244,196,48,${p.opacity * 0.8})`,
             }}
           />
         ))}
@@ -124,7 +124,7 @@ export function HeroSection() {
           {/* Main Headline */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-snug text-white mb-3 md:mb-4">
             BUILD THE THINKING YOU WISH YOU LEARNED{' '}
-            <span style={{ color: 'rgb(217,119,6)' }}>EARLIER.</span>
+            <span style={{ color: '#F4C430' }}>EARLIER.</span>
           </h1>
 
           {/* Description */}
@@ -143,7 +143,7 @@ export function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="px-7 md:px-10 py-3 md:py-3.5 text-black text-sm md:text-base font-bold rounded transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
-              style={{ backgroundColor: 'rgb(217,119,6)' }}
+              style={{ backgroundColor: '#F4C430' }}
             >
               WAR ROOM FREE TRIAL
             </a>
@@ -152,7 +152,7 @@ export function HeroSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="px-7 md:px-10 py-3 md:py-3.5 border-2 text-sm md:text-base font-bold rounded transition-all duration-300 hover:text-black hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
-              style={{ borderColor: 'rgb(217,119,6)', color: 'rgb(217,119,6)', backgroundColor: 'transparent' }}
+              style={{ borderColor: '#F4C430', color: '#F4C430', backgroundColor: 'transparent' }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = 'rgb(217,119,6)'
                 e.currentTarget.style.color = 'black'
