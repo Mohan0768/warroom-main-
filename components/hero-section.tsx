@@ -70,7 +70,7 @@ export function HeroSection() {
   return (
     <section 
       ref={containerRef}
-      className="relative min-h-screen bg-black scroll-smooth overflow-x-hidden"
+      className="relative min-h-[auto] lg:min-h-screen bg-black scroll-smooth overflow-x-hidden"
     >
       {/* Cursor glow effect */}
       <div
@@ -106,11 +106,11 @@ export function HeroSection() {
       </div>
 
       {/* Main Content - Image on top, text below with spacing */}
-      <div className="relative z-10 flex flex-col gap-2 lg:gap-2 items-center px-2 sm:px-3 lg:px-6 py-0 lg:py-0 min-h-screen h-screen pt-2">
+      <div className="relative z-10 flex flex-col gap-2 lg:gap-2 items-center px-4 sm:px-6 lg:px-6 py-0 lg:py-0 min-h-[auto] lg:min-h-screen lg:h-screen pt-2">
         
         {/* Image Section - Top on all devices */}
         <div className="w-full flex items-center justify-center flex-shrink-0 animate-fadeInUp pt-0 lg:pt-0 flex-shrink flex-grow-0 px-1 sm:px-2">
-          <div className="w-full max-w-xs sm:max-w-sm md:max-w-xl lg:max-w-4xl aspect-video">
+          <div className="w-full max-w-[280px] sm:max-w-sm md:max-w-xl lg:max-w-4xl aspect-video">
             <img 
               src="/hero-background.jpg"
               alt="Build the thinking"
@@ -120,24 +120,24 @@ export function HeroSection() {
         </div>
 
         {/* Text Section - Bottom on all devices */}
-        <div className="w-full flex flex-col justify-end animate-fadeInUp max-w-4xl mx-auto flex-1 pb-4" style={{ animationDelay: '0.1s' }}>
+        <div className="w-full flex flex-col items-center justify-start lg:justify-end animate-fadeInUp max-w-4xl mx-auto flex-none lg:flex-1 pb-4 text-center" style={{ animationDelay: '0.1s' }}>
           {/* Main Headline */}
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight text-white mb-1 md:mb-2">
-            BUILD THE THINKING YOU WISH YOU LEARNED{' '}
-            <span style={{ color: '#D4A017' }}>EARLIER.</span>
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight text-white mb-1 md:mb-2 text-center text-balance">
+            AI can answer any question - But it cannot ask the question that only your life has prepared you to ask{' '}
+            <span style={{ color: '#D4A017' }}>- KK</span>
           </h1>
 
           {/* Description */}
-          <p className="text-xs text-gray-300 leading-relaxed mb-1">
+          <p className="text-xs text-gray-300 leading-relaxed mb-1 text-center">
             In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
 
-          <p className="text-xs text-gray-400 font-regular mb-3">
+          <p className="text-xs text-gray-400 font-regular mb-3 text-center">
             Entrepreneurial thinking workshops & business simulations
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-2 md:gap-3 mb-3 mt-2">
+          <div className="flex flex-col sm:flex-row gap-2 md:gap-3 mb-3 mt-2 justify-center">
             <a 
               href="https://war-roomdemo.vercel.app/" 
               target="_blank"
@@ -166,20 +166,13 @@ export function HeroSection() {
             </a>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-3 md:gap-6 mt-2">
-            <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-sm md:text-lg font-black text-white">15+</p>
-              <p className="text-xs text-gray-400 mt-0.5 font-medium">YEARS</p>
-            </div>
-            <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-sm md:text-lg font-black text-white">6</p>
-              <p className="text-xs text-gray-400 mt-0.5 font-medium">STAGES</p>
-            </div>
-            <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-sm md:text-lg font-black text-white">$0→5M</p>
-              <p className="text-xs text-gray-400 mt-0.5 font-medium">GROWTH</p>
-            </div>
+          {/* Credentials Image */}
+          <div className="w-full max-w-3xl mt-4 transition-all duration-300 hover:scale-105">
+            <img 
+              src="/credentials-bar.png"
+              alt="15+ Years Training Leaders, $0 to 5-Figure, Founder of 3 Companies - Brandon Hall Group Awards"
+              className="w-full h-auto object-contain"
+            />
           </div>
         </div>
       </div>
