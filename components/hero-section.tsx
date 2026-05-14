@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
 
 interface Particle {
@@ -29,7 +28,6 @@ export function HeroSection() {
 
       setMousePos({ x, y })
 
-      // Create particles at cursor position
       if (Math.random() > 0.7) {
         const newParticle: Particle = {
           id: particleIdRef.current++,
@@ -48,7 +46,6 @@ export function HeroSection() {
     return () => window.removeEventListener('mousemove', handleMouseMove)
   }, [])
 
-  // Animate particles
   useEffect(() => {
     const animationFrame = setInterval(() => {
       setParticles(prev =>
@@ -58,7 +55,7 @@ export function HeroSection() {
             x: p.x + p.vx,
             y: p.y + p.vy,
             opacity: p.opacity - 0.02,
-            vy: p.vy + 0.1, // gravity
+            vy: p.vy + 0.1,
           }))
           .filter(p => p.opacity > 0)
       )
@@ -70,7 +67,7 @@ export function HeroSection() {
   return (
     <section 
       ref={containerRef}
-      className="relative min-h-screen bg-black scroll-smooth overflow-x-hidden"
+      className="relative w-full min-h-screen bg-black scroll-smooth overflow-x-hidden pt-0"
     >
       {/* Cursor glow effect */}
       <div
@@ -105,80 +102,103 @@ export function HeroSection() {
         ))}
       </div>
 
-      {/* Main Content - Flex layout for desktop, stacked for mobile */}
-      <div className="relative z-10 flex flex-col lg:flex-row gap-6 lg:gap-8 items-center lg:items-start px-4 sm:px-6 lg:px-16 py-8 lg:py-12 min-h-screen lg:min-h-auto">
-        
-        {/* Image Section - Left on desktop, top on mobile */}
-        <div className="w-full lg:w-1/2 flex items-center justify-center flex-shrink-0 animate-fadeInUp">
-          <div className="w-full max-w-md lg:max-w-lg">
-            <img 
-              src="/hero-background.jpg"
-              alt="Build the thinking"
-              className="w-full h-auto rounded-lg shadow-2xl"
-            />
+      {/* Main Content Container */}
+      <div className="relative z-10 w-full">
+        {/* Portrait Mosaic "you" Section */}
+        <div className="w-full pt-12 sm:pt-16 md:pt-20 lg:pt-24 px-4 sm:px-6 md:px-8 lg:px-12 animate-fadeInUp flex items-center justify-center">
+          <div className="w-full max-w-2xl">
+            <svg viewBox="0 0 800 300" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+              {/* Portrait mosaic "you" text filled with small faces */}
+              <defs>
+                <pattern id="portraitPattern" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+                  <circle cx="6" cy="6" r="4" fill="#999999" opacity="0.8" />
+                  <circle cx="4" cy="5" r="1.2" fill="#ffffff" opacity="0.6" />
+                  <circle cx="8" cy="5" r="1.2" fill="#ffffff" opacity="0.6" />
+                  <line x1="6" y1="7" x2="6" y2="8" stroke="#ffffff" strokeWidth="0.5" opacity="0.4" />
+                </pattern>
+              </defs>
+              
+              {/* "you" text with portrait pattern fill */}
+              <text 
+                x="400" 
+                y="200" 
+                fontSize="160" 
+                fontWeight="900" 
+                fontFamily="Arial, sans-serif" 
+                textAnchor="middle" 
+                fill="url(#portraitPattern)" 
+                stroke="#999999" 
+                strokeWidth="1" 
+                opacity="0.85"
+              >
+                you
+              </text>
+            </svg>
           </div>
         </div>
 
-        {/* Text Section - Right on desktop, bottom on mobile */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-start animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
-          {/* Main Headline */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-snug text-white mb-3 md:mb-4">
-            BUILD THE THINKING YOU WISH YOU LEARNED{' '}
-            <span style={{ color: '#D4A017' }}>EARLIER.</span>
-          </h1>
+        {/* Text Content Section */}
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 py-8 sm:py-10 md:py-12 lg:py-16 animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+          <div className="max-w-4xl mx-auto">
+            {/* Main Headline */}
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-white mb-4 md:mb-6 text-balance">
+              BUILD THE THINKING YOU WISH YOU LEARNED{' '}
+              <span style={{ color: '#D4A017' }}>EARLIER.</span>
+            </h1>
 
-          {/* Description */}
-          <p className="text-xs sm:text-sm md:text-base text-gray-300 leading-relaxed mb-2">
-            In an AI-driven world, how you think determines your career, direction, and growth.
-          </p>
+            {/* Description */}
+            <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed mb-3 md:mb-4 max-w-2xl">
+              In an AI-driven world, how you think determines your career, direction, and growth.
+            </p>
 
-          <p className="text-xs sm:text-sm md:text-base text-gray-400 font-regular mb-5 md:mb-6">
-            Entrepreneurial thinking workshops & business simulations
-          </p>
+            <p className="text-sm sm:text-base md:text-lg text-gray-400 font-regular mb-6 md:mb-8 max-w-2xl">
+              Entrepreneurial thinking workshops & business simulations
+            </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12 mt-6 lg:mt-8">
-            <a 
-              href="https://war-roomdemo.vercel.app/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-7 md:px-10 py-3 md:py-3.5 text-black text-sm md:text-base font-bold rounded transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
-              style={{ backgroundColor: '#D4A017' }}
-            >
-              WAR ROOM FREE TRIAL
-            </a>
-            <a 
-              href="https://calendly.com/mohan20051028/new-meeting" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-7 md:px-10 py-3 md:py-3.5 border-2 text-sm md:text-base font-bold rounded transition-all duration-300 hover:text-black hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
-              style={{ borderColor: '#D4A017', color: '#D4A017', backgroundColor: 'transparent' }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#D4A017'
-                e.currentTarget.style.color = 'black'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = 'transparent'
-                e.currentTarget.style.color = '#D4A017'
-              }}
-            >
-              BOOK A CALL
-            </a>
-          </div>
-
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 md:gap-10">
-            <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-lg md:text-2xl font-black text-white">15+</p>
-              <p className="text-xs text-gray-400 mt-1 font-medium">YEARS</p>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-10 md:mb-16 mt-6 md:mt-8">
+              <a 
+                href="https://war-roomdemo.vercel.app/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 sm:px-8 md:px-10 py-3 md:py-3.5 text-black text-sm md:text-base font-bold rounded transition-all duration-300 hover:shadow-2xl hover:scale-105 inline-block text-center w-fit shadow-lg"
+                style={{ backgroundColor: '#D4A017' }}
+              >
+                ENTER WAR ROOM
+              </a>
+              <a 
+                href="https://calendly.com/mohan20051028/new-meeting" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 sm:px-8 md:px-10 py-3 md:py-3.5 border-2 text-sm md:text-base font-bold rounded transition-all duration-300 inline-block text-center w-fit shadow-lg"
+                style={{ borderColor: '#D4A017', color: '#D4A017', backgroundColor: 'transparent' }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#D4A017'
+                  e.currentTarget.style.color = 'black'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = 'transparent'
+                  e.currentTarget.style.color = '#D4A017'
+                }}
+              >
+                BOOK A CALL
+              </a>
             </div>
-            <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-lg md:text-2xl font-black text-white">6</p>
-              <p className="text-xs text-gray-400 mt-1 font-medium">STAGES</p>
-            </div>
-            <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-lg md:text-2xl font-black text-white">$0→5M</p>
-              <p className="text-xs text-gray-400 mt-1 font-medium">GROWTH</p>
+
+            {/* Stats Grid */}
+            <div className="grid grid-cols-3 gap-4 md:gap-8 max-w-2xl">
+              <div className="transition-all duration-300 hover:scale-105">
+                <p className="text-xl md:text-2xl lg:text-3xl font-black text-white">15+</p>
+                <p className="text-xs md:text-sm text-gray-400 mt-1 md:mt-2 font-medium">YEARS</p>
+              </div>
+              <div className="transition-all duration-300 hover:scale-105">
+                <p className="text-xl md:text-2xl lg:text-3xl font-black text-white">6</p>
+                <p className="text-xs md:text-sm text-gray-400 mt-1 md:mt-2 font-medium">STAGES</p>
+              </div>
+              <div className="transition-all duration-300 hover:scale-105">
+                <p className="text-xl md:text-2xl lg:text-3xl font-black text-white">$0→5M</p>
+                <p className="text-xs md:text-sm text-gray-400 mt-1 md:mt-2 font-medium">GROWTH</p>
+              </div>
             </div>
           </div>
         </div>
