@@ -70,16 +70,16 @@ export function HeroSection() {
   return (
     <section 
       ref={containerRef}
-      className="relative min-h-screen bg-black scroll-smooth overflow-hidden"
+      className="relative h-screen bg-black scroll-smooth overflow-hidden"
     >
       {/* Cursor glow effect */}
       <div
-        className="pointer-events-none fixed w-64 h-64 rounded-full transition-opacity duration-200"
+        className="pointer-events-none fixed w-80 h-80 rounded-full transition-opacity duration-200"
         style={{
-          background: 'radial-gradient(circle, rgba(250,204,21,0.1) 0%, transparent 70%)',
-          left: `${mousePos.x - 128}px`,
-          top: `${mousePos.y - 128}px`,
-          opacity: 0.6,
+          background: 'radial-gradient(circle, rgba(250,204,21,0.15) 0%, transparent 70%)',
+          left: `${mousePos.x - 160}px`,
+          top: `${mousePos.y - 160}px`,
+          opacity: 0.7,
           zIndex: 1,
         }}
       />
@@ -89,7 +89,7 @@ export function HeroSection() {
         {particles.map(p => (
           <div
             key={p.id}
-            className="fixed rounded-full bg-yellow-400"
+            className="fixed rounded-full bg-yellow-400 shadow-lg"
             style={{
               left: `${p.x}px`,
               top: `${p.y}px`,
@@ -98,59 +98,59 @@ export function HeroSection() {
               opacity: p.opacity,
               pointerEvents: 'none',
               zIndex: 2,
+              boxShadow: `0 0 ${p.size * 2}px rgba(250,204,21,${p.opacity * 0.8})`,
             }}
           />
         ))}
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 flex flex-col min-h-screen px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        {/* Image Section - Top */}
-        <div className="w-full flex-shrink-0 mb-8 md:mb-12 animate-fadeInUp">
+      {/* Top Half - Image Section */}
+      <div className="relative z-10 h-1/2 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-6 md:py-8 animate-fadeInUp">
+        <div className="w-full max-w-5xl">
           <div className="relative overflow-hidden rounded-xl shadow-2xl">
             <img 
               src="/hero-background.jpg"
               alt="Build the thinking"
-              className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover block"
+              className="w-full h-auto max-h-96 object-cover block"
             />
           </div>
         </div>
+      </div>
 
-        {/* Text Content Section - Bottom */}
-        <div className="w-full flex-grow flex flex-col justify-center max-w-4xl mx-auto space-y-6 md:space-y-8 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+      {/* Bottom Half - Text Content Section */}
+      <div className="relative z-10 h-1/2 flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-6 md:py-8 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+        <div className="w-full max-w-4xl mx-auto space-y-4 md:space-y-6">
           {/* Tagline */}
           <p className="text-xs md:text-sm font-medium text-gray-300 tracking-wide">
             KK KANNABIRAN&apos;S humanfirstbykk
           </p>
 
           {/* Main Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-white">
             BUILD THE
             <br />
-            THINKING YOU
+            THINKING YOU WISH
             <br />
-            WISH YOU HAD
-            <br />
-            LEARNED{' '}
+            YOU LEARNED{' '}
             <span className="text-yellow-500">EARLIER.</span>
           </h1>
 
           {/* Description */}
-          <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed max-w-2xl">
-            In an AI-driven world, how you think determines your career, your direction, and your growth — so you stay in control when the world becomes unpredictable.
+          <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed max-w-2xl">
+            In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
 
-          <p className="text-base sm:text-lg text-gray-300 font-medium max-w-2xl">
-            Entrepreneurial thinking workshops & business simulations for students and leaders.
+          <p className="text-sm sm:text-base text-gray-300 font-medium max-w-2xl">
+            Entrepreneurial thinking workshops & business simulations.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 pt-4 animate-fadeInUp" style={{ animationDelay: '0.3s' }} suppressHydrationWarning={true}>
+          <div className="flex flex-col sm:flex-row gap-2 md:gap-3 pt-2 animate-fadeInUp" style={{ animationDelay: '0.3s' }} suppressHydrationWarning={true}>
             <a 
               href="https://war-roomdemo.vercel.app/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 md:px-8 py-3 bg-yellow-500 text-black text-sm md:text-base font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center"
+              className="px-5 md:px-7 py-2 md:py-3 bg-yellow-500 text-black text-xs md:text-sm font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center"
             >
               WAR ROOM FREE TRIAL
             </a>
@@ -158,25 +158,25 @@ export function HeroSection() {
               href="https://calendly.com/mohan20051028/new-meeting" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 md:px-8 py-3 border-2 border-yellow-500 text-yellow-500 text-sm md:text-base font-bold rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center"
+              className="px-5 md:px-7 py-2 md:py-3 border-2 border-yellow-500 text-yellow-500 text-xs md:text-sm font-bold rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center"
             >
               BOOK A CALL
             </a>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 md:pt-12 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
+          <div className="grid grid-cols-3 gap-3 md:gap-6 pt-4 md:pt-6 animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-2xl md:text-3xl font-black text-white">15+</p>
-              <p className="text-xs md:text-sm text-gray-300 mt-2 font-medium">YEARS IN LEADERSHIP</p>
+              <p className="text-lg md:text-2xl font-black text-white">15+</p>
+              <p className="text-xs text-gray-300 mt-1 font-medium">YEARS</p>
             </div>
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-2xl md:text-3xl font-black text-white">6 Stages</p>
-              <p className="text-xs md:text-sm text-gray-300 mt-2 font-medium">LIVE WAR ROOM</p>
+              <p className="text-lg md:text-2xl font-black text-white">6</p>
+              <p className="text-xs text-gray-300 mt-1 font-medium">STAGES</p>
             </div>
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-2xl md:text-3xl font-black text-white">$0 → 5-Figure</p>
-              <p className="text-xs md:text-sm text-gray-300 mt-2 font-medium">KK&apos;S BUILD</p>
+              <p className="text-lg md:text-2xl font-black text-white">$0→5M</p>
+              <p className="text-xs text-gray-300 mt-1 font-medium">GROWTH</p>
             </div>
           </div>
         </div>
