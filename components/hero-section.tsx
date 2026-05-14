@@ -128,6 +128,7 @@ export function HeroSection() {
           </h1>
 
           {/* Description */}
+          <h1>
           <p className="text-xs text-gray-300 leading-relaxed mb-1 text-center">
             In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
