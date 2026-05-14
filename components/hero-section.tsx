@@ -104,51 +104,42 @@ export function HeroSection() {
         ))}
       </div>
 
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: 'url(/hero-background.jpg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
-        }}
-      />
+      {/* Top Half - Image Section */}
+      <div className="relative z-10 h-1/2 flex items-center justify-center px-4 sm:px-6 lg:px-8 py-8 animate-fadeInUp">
+        <div className="w-full max-w-6xl">
+          <img 
+            src="/hero-background.jpg"
+            alt="Build the thinking"
+            className="w-full h-auto max-h-80 md:max-h-96 object-cover rounded-lg shadow-2xl"
+          />
+        </div>
+      </div>
 
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70 z-[3]" />
-
-      {/* Content - Text Overlay */}
-      <div className="relative z-10 h-full flex flex-col justify-between px-4 sm:px-8 lg:px-16 py-12 md:py-20">
-        {/* Top Section - Tagline and Image Space */}
-        <div className="flex-shrink-0 animate-fadeInUp">
-          <p className="text-xs md:text-sm font-medium text-gray-300 tracking-widest">
+      {/* Bottom Half - Text Section */}
+      <div className="relative z-10 h-1/2 bg-black flex flex-col justify-center px-4 sm:px-8 lg:px-16 py-8 md:py-12 animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+        <div className="w-full max-w-6xl">
+          {/* Tagline */}
+          <p className="text-xs md:text-sm font-medium text-gray-300 tracking-widest mb-4 md:mb-6">
             KK KANNABIRAN&apos;S humanfirstbykk
           </p>
-        </div>
 
-        {/* Middle Section - Main Content */}
-        <div className="flex-grow flex flex-col justify-center animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
-          {/* Main Headline - Single line display */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black leading-tight text-white mb-6 md:mb-8 max-w-5xl">
+          {/* Main Headline - Straight line */}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight text-white mb-4 md:mb-6">
             BUILD THE THINKING YOU WISH YOU LEARNED{' '}
             <span className="text-yellow-500">EARLIER.</span>
           </h1>
 
           {/* Description - Straight line text */}
-          <p className="text-sm sm:text-base md:text-lg text-gray-100 leading-relaxed max-w-4xl mb-2">
+          <p className="text-sm sm:text-base md:text-lg text-gray-200 leading-relaxed mb-2">
             In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
 
-          <p className="text-sm sm:text-base text-gray-200 font-medium max-w-4xl">
+          <p className="text-sm sm:text-base text-gray-300 font-medium mb-6 md:mb-8">
             Entrepreneurial thinking workshops & business simulations
           </p>
-        </div>
 
-        {/* Bottom Section - CTA and Stats */}
-        <div className="flex-shrink-0 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8">
             <a 
               href="https://war-roomdemo.vercel.app/" 
               target="_blank"
