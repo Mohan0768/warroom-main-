@@ -18,7 +18,7 @@ export function WarRoomAudio() {
     <>
       <audio
         ref={audioRef}
-        src="/war-thunder.mp3"
+        src="/cold-space.mp3"
         autoPlay
         loop
         preload="auto"
@@ -38,7 +38,7 @@ export function WarRoomAudio() {
             }
           }}
           className="flex items-center justify-center w-12 h-12 text-black rounded-full shadow-lg transition-all duration-300 hover:scale-110 hover:opacity-90 font-bold text-lg"
-          style={{ backgroundColor: 'rgb(217,119,6)' }}
+          style={{ backgroundColor: '#D4A017' }}
           title="Toggle music"
         >
           🎵
