@@ -105,12 +105,12 @@ export function HeroSection() {
         ))}
       </div>
 
-      {/* Main Content - Flex layout for desktop, stacked for mobile */}
-      <div className="relative z-10 flex flex-col lg:flex-row gap-6 lg:gap-8 items-center lg:items-start px-4 sm:px-6 lg:px-16 py-8 lg:py-12 min-h-screen lg:min-h-auto">
+      {/* Main Content - Image on top, text below with spacing */}
+      <div className="relative z-10 flex flex-col gap-8 lg:gap-12 items-center px-4 sm:px-6 lg:px-16 py-8 lg:py-12 min-h-screen">
         
-        {/* Image Section - Left on desktop, top on mobile */}
-        <div className="w-full lg:w-1/2 flex items-center justify-center flex-shrink-0 animate-fadeInUp">
-          <div className="w-full max-w-md lg:max-w-lg">
+        {/* Image Section - Top on all devices */}
+        <div className="w-full flex items-center justify-center flex-shrink-0 animate-fadeInUp pt-8 lg:pt-12">
+          <div className="w-full max-w-md lg:max-w-2xl">
             <img 
               src="/hero-background.jpg"
               alt="Build the thinking"
@@ -119,8 +119,8 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Text Section - Right on desktop, bottom on mobile */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-start animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
+        {/* Text Section - Bottom on all devices */}
+        <div className="w-full flex flex-col justify-start animate-fadeInUp max-w-3xl mx-auto" style={{ animationDelay: '0.1s' }}>
           {/* Main Headline */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-snug text-white mb-3 md:mb-4">
             BUILD THE THINKING YOU WISH YOU LEARNED{' '}
