@@ -120,24 +120,24 @@ export function HeroSection() {
         </div>
 
         {/* Text Section - Bottom on all devices */}
-        <div className="w-full flex flex-col justify-start lg:justify-end animate-fadeInUp max-w-4xl mx-auto flex-none lg:flex-1 pb-4" style={{ animationDelay: '0.1s' }}>
+        <div className="w-full flex flex-col items-center justify-start lg:justify-end animate-fadeInUp max-w-4xl mx-auto flex-none lg:flex-1 pb-4 text-center" style={{ animationDelay: '0.1s' }}>
           {/* Main Headline */}
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight text-white mb-1 md:mb-2">
-            BUILD THE THINKING YOU WISH YOU LEARNED{' '}
-            <span style={{ color: '#D4A017' }}>EARLIER.</span>
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight text-white mb-1 md:mb-2 text-center text-balance">
+            AI can answer any question - But it cannot ask the question that only your life has prepared you to ask{' '}
+            <span style={{ color: '#D4A017' }}>- KK</span>
           </h1>
 
           {/* Description */}
-          <p className="text-xs text-gray-300 leading-relaxed mb-1">
+          <p className="text-xs text-gray-300 leading-relaxed mb-1 text-center">
             In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
 
-          <p className="text-xs text-gray-400 font-regular mb-3">
+          <p className="text-xs text-gray-400 font-regular mb-3 text-center">
             Entrepreneurial thinking workshops & business simulations
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-2 md:gap-3 mb-3 mt-2">
+          <div className="flex flex-col sm:flex-row gap-2 md:gap-3 mb-3 mt-2 justify-center">
             <a 
               href="https://war-roomdemo.vercel.app/" 
               target="_blank"
@@ -167,16 +167,16 @@ export function HeroSection() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-3 md:gap-6 mt-2">
-            <div className="transition-all duration-300 hover:scale-105">
+          <div className="grid grid-cols-3 gap-3 md:gap-6 mt-2 w-full max-w-md">
+            <div className="transition-all duration-300 hover:scale-105 text-center">
               <p className="text-sm md:text-lg font-black text-white">15+</p>
               <p className="text-xs text-gray-400 mt-0.5 font-medium">YEARS</p>
             </div>
-            <div className="transition-all duration-300 hover:scale-105">
+            <div className="transition-all duration-300 hover:scale-105 text-center">
               <p className="text-sm md:text-lg font-black text-white">6</p>
               <p className="text-xs text-gray-400 mt-0.5 font-medium">STAGES</p>
             </div>
-            <div className="transition-all duration-300 hover:scale-105">
+            <div className="transition-all duration-300 hover:scale-105 text-center">
               <p className="text-sm md:text-lg font-black text-white">$0→5M</p>
               <p className="text-xs text-gray-400 mt-0.5 font-medium">GROWTH</p>
             </div>
