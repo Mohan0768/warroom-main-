@@ -106,43 +106,43 @@ export function HeroSection() {
       </div>
 
       {/* Main Content - Image on top, text below with spacing */}
-      <div className="relative z-10 flex flex-col gap-8 lg:gap-12 items-center px-4 sm:px-6 lg:px-16 py-8 lg:py-12 min-h-screen">
+      <div className="relative z-10 flex flex-col gap-4 lg:gap-6 items-center px-3 sm:px-4 lg:px-8 py-6 lg:py-8 min-h-screen h-screen">
         
         {/* Image Section - Top on all devices */}
-        <div className="w-full flex items-center justify-center flex-shrink-0 animate-fadeInUp pt-8 lg:pt-12">
-          <div className="w-full max-w-md lg:max-w-2xl">
+        <div className="w-full flex items-center justify-center flex-shrink-0 animate-fadeInUp pt-4 lg:pt-6 flex-1">
+          <div className="w-full max-w-sm sm:max-w-md lg:max-w-4xl h-full">
             <img 
               src="/hero-background.jpg"
               alt="Build the thinking"
-              className="w-full h-auto rounded-lg shadow-2xl"
+              className="w-full h-full object-cover rounded-lg shadow-2xl"
             />
           </div>
         </div>
 
         {/* Text Section - Bottom on all devices */}
-        <div className="w-full flex flex-col justify-start animate-fadeInUp max-w-3xl mx-auto" style={{ animationDelay: '0.1s' }}>
+        <div className="w-full flex flex-col justify-end animate-fadeInUp max-w-4xl mx-auto flex-1" style={{ animationDelay: '0.1s' }}>
           {/* Main Headline */}
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black leading-snug text-white mb-3 md:mb-4">
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight text-white mb-1 md:mb-2">
             BUILD THE THINKING YOU WISH YOU LEARNED{' '}
             <span style={{ color: '#D4A017' }}>EARLIER.</span>
           </h1>
 
           {/* Description */}
-          <p className="text-xs sm:text-sm md:text-base text-gray-300 leading-relaxed mb-2">
+          <p className="text-xs text-gray-300 leading-relaxed mb-1">
             In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
 
-          <p className="text-xs sm:text-sm md:text-base text-gray-400 font-regular mb-5 md:mb-6">
+          <p className="text-xs text-gray-400 font-regular mb-3">
             Entrepreneurial thinking workshops & business simulations
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-12 mt-6 lg:mt-8">
+          <div className="flex flex-col sm:flex-row gap-2 md:gap-3 mb-3 mt-2">
             <a 
               href="https://war-roomdemo.vercel.app/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-7 md:px-10 py-3 md:py-3.5 text-black text-sm md:text-base font-bold rounded transition-all duration-300 hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
+              className="px-4 md:px-6 py-2 md:py-2.5 text-black text-xs md:text-sm font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 inline-block text-center w-fit shadow-md"
               style={{ backgroundColor: '#D4A017' }}
             >
               WAR ROOM FREE TRIAL
@@ -151,7 +151,7 @@ export function HeroSection() {
               href="https://calendly.com/mohan20051028/new-meeting" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-7 md:px-10 py-3 md:py-3.5 border-2 text-sm md:text-base font-bold rounded transition-all duration-300 hover:text-black hover:shadow-2xl hover:scale-110 inline-block text-center w-fit shadow-lg"
+              className="px-4 md:px-6 py-2 md:py-2.5 border-2 text-xs md:text-sm font-bold rounded transition-all duration-300 hover:text-black hover:shadow-lg hover:scale-105 inline-block text-center w-fit shadow-md"
               style={{ borderColor: '#D4A017', color: '#D4A017', backgroundColor: 'transparent' }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.backgroundColor = '#D4A017'
@@ -167,18 +167,18 @@ export function HeroSection() {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-6 md:gap-10">
+          <div className="grid grid-cols-3 gap-3 md:gap-6 mt-2">
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-lg md:text-2xl font-black text-white">15+</p>
-              <p className="text-xs text-gray-400 mt-1 font-medium">YEARS</p>
+              <p className="text-sm md:text-lg font-black text-white">15+</p>
+              <p className="text-xs text-gray-400 mt-0.5 font-medium">YEARS</p>
             </div>
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-lg md:text-2xl font-black text-white">6</p>
-              <p className="text-xs text-gray-400 mt-1 font-medium">STAGES</p>
+              <p className="text-sm md:text-lg font-black text-white">6</p>
+              <p className="text-xs text-gray-400 mt-0.5 font-medium">STAGES</p>
             </div>
             <div className="transition-all duration-300 hover:scale-105">
-              <p className="text-lg md:text-2xl font-black text-white">$0→5M</p>
-              <p className="text-xs text-gray-400 mt-1 font-medium">GROWTH</p>
+              <p className="text-sm md:text-lg font-black text-white">$0→5M</p>
+              <p className="text-xs text-gray-400 mt-0.5 font-medium">GROWTH</p>
             </div>
           </div>
         </div>
