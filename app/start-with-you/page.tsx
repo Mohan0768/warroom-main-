@@ -12,7 +12,7 @@ export default function StartWithYouPage() {
       <header className="sticky top-0 z-40 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
           <Link href="/" className="text-lg md:text-xl font-black">humanfirstbykk</Link>
-          <Link href="/" className="text-xs md:text-sm font-medium transition-colors" style={{ color: 'inherit' }} onMouseEnter={(e) => e.currentTarget.style.color = 'rgb(217,119,6)'} onMouseLeave={(e) => e.currentTarget.style.color = 'inherit'}>← Back Home</Link>
+          <Link href="/" className="text-xs md:text-sm font-medium transition-colors hover:text-amber-700" style={{ color: 'inherit' }}>← Back Home</Link>
         </div>
       </header>
 
@@ -36,8 +36,6 @@ export default function StartWithYouPage() {
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none px-6 sm:px-8 py-3 text-black font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
               style={{ backgroundColor: 'rgb(217,119,6)' }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgb(180,97,5)'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgb(217,119,6)'}
             >
               PRE BUSINESS SESSION
             </a>
@@ -45,16 +43,8 @@ export default function StartWithYouPage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
+              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base hover:text-black"
               style={{ borderColor: 'rgb(217,119,6)', color: 'rgb(217,119,6)', backgroundColor: 'transparent' }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = 'rgb(217,119,6)'
-                e.currentTarget.style.color = 'black'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = 'transparent'
-                e.currentTarget.style.color = 'rgb(217,119,6)'
-              }}
             >
               CAMPUS FREE SESSION
             </a>

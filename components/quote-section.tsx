@@ -1,3 +1,5 @@
+'use client'
+
 export function QuoteSection() {
   return (
     <section className="py-16 md:py-24 px-4 md:px-6 bg-black text-white">

@@ -150,10 +150,8 @@ export default function TheGaragePage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-medium rounded transition-all duration-300 hover:scale-105"
+              className="inline-block px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-medium rounded transition-all duration-300 hover:scale-105 hover:opacity-90"
               style={{ backgroundColor: 'rgb(217,119,6)' }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgb(180,97,5)'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgb(217,119,6)'}
             >
               BOOK A MEETING
             </a>
