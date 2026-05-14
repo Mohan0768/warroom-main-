@@ -8,23 +8,26 @@ export function OfferingsSection() {
       description: 'A 6-stage intensive simulation where you build a business from scratch, make real decisions, and experience the consequences in a risk-free environment.',
       color: 'bg-black',
       textColor: 'text-white',
-      buttonColor: 'bg-yellow-500 text-black hover:bg-yellow-600'
+      buttonColor: 'text-black',
+      buttonStyle: { backgroundColor: 'rgb(217,119,6)' }
     },
     {
       title: 'Start With',
       subtitle: 'YOU — Keynote',
       description: 'Transform how you think about your future. This keynote helps leaders and students understand their power in an AI-driven world.',
-      color: 'bg-yellow-500',
+      color: 'rgb(217,119,6)',
       textColor: 'text-black',
-      buttonColor: 'bg-black text-yellow-500 hover:bg-gray-900'
+      buttonColor: 'text-white',
+      buttonStyle: { backgroundColor: 'black' }
     },
     {
       title: 'The Garage',
       subtitle: 'Build from $0 in 3 Days',
       description: 'An intensive 3-day entrepreneurial sprint where you learn to validate ideas, build MVPs, and think like a founder.',
-      color: 'bg-yellow-500',
+      color: 'rgb(217,119,6)',
       textColor: 'text-black',
-      buttonColor: 'bg-black text-yellow-500 hover:bg-gray-900'
+      buttonColor: 'text-white',
+      buttonStyle: { backgroundColor: 'black' }
     }
   ]
 
@@ -44,8 +47,11 @@ export function OfferingsSection() {
           {offerings.map((offering, idx) => (
             <div 
               key={idx}
-              className={`${offering.color} ${offering.textColor} p-6 md:p-8 rounded-lg flex flex-col justify-between min-h-72 md:min-h-96 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2`}
-              style={{ animationDelay: `${idx * 0.1}s` }}
+              className={`${typeof offering.color === 'string' && offering.color.startsWith('bg-') ? offering.color : ''} ${offering.textColor} p-6 md:p-8 rounded-lg flex flex-col justify-between min-h-72 md:min-h-96 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2`}
+              style={{ 
+                ...(typeof offering.color !== 'string' || !offering.color.startsWith('bg-') ? { backgroundColor: offering.color } : {}),
+                animationDelay: `${idx * 0.1}s`
+              }}
             >
               <div>
                 <h3 className="text-3xl md:text-4xl font-black leading-tight mb-4">
@@ -60,6 +66,7 @@ export function OfferingsSection() {
               <Link 
                 href={idx === 0 ? '/war-room' : idx === 1 ? '/start-with-you' : '/the-garage'}
                 className={`${offering.buttonColor} inline-block px-6 py-2 rounded font-medium text-sm transition-all duration-300 mt-6 w-fit hover:shadow-lg hover:scale-105`}
+                style={offering.buttonStyle}
               >
                 LEARN MORE
               </Link>

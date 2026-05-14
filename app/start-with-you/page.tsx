@@ -12,7 +12,7 @@ export default function StartWithYouPage() {
       <header className="sticky top-0 z-40 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
           <Link href="/" className="text-lg md:text-xl font-black">humanfirstbykk</Link>
-          <Link href="/" className="text-xs md:text-sm font-medium hover:text-yellow-500 transition-colors">← Back Home</Link>
+          <Link href="/" className="text-xs md:text-sm font-medium transition-colors" style={{ color: 'inherit' }} onMouseEnter={(e) => e.currentTarget.style.color = 'rgb(217,119,6)'} onMouseLeave={(e) => e.currentTarget.style.color = 'inherit'}>← Back Home</Link>
         </div>
       </header>
 
@@ -34,7 +34,10 @@ export default function StartWithYouPage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 bg-yellow-500 text-black font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
+              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 text-black font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
+              style={{ backgroundColor: 'rgb(217,119,6)' }}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgb(180,97,5)'}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'rgb(217,119,6)'}
             >
               PRE BUSINESS SESSION
             </a>
@@ -42,7 +45,16 @@ export default function StartWithYouPage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 border-yellow-500 text-yellow-500 font-bold rounded hover:bg-yellow-500 hover:text-black transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
+              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
+              style={{ borderColor: 'rgb(217,119,6)', color: 'rgb(217,119,6)', backgroundColor: 'transparent' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = 'rgb(217,119,6)'
+                e.currentTarget.style.color = 'black'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = 'transparent'
+                e.currentTarget.style.color = 'rgb(217,119,6)'
+              }}
             >
               CAMPUS FREE SESSION
             </a>
@@ -51,7 +63,7 @@ export default function StartWithYouPage() {
       </section>
 
       {/* Hero Text Section */}
-      <section className="py-10 md:py-14 px-4 md:px-6 bg-yellow-500 text-black">
+      <section className="py-10 md:py-14 px-4 md:px-6 text-black" style={{ backgroundColor: 'rgb(217,119,6)' }}>
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-3 md:mb-4">
             Start With YOU
