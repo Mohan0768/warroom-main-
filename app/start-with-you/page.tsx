@@ -22,7 +22,7 @@ export default function StartWithYouPage() {
           {/* Image */}
           <div className="w-full rounded-lg overflow-hidden mb-6">
             <img 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-05-07%20233137-qjdhlcNi3n3y3CBG52f8Y77sYN6tWV.png"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%282%29-YJq8Xvh8LLoc2NXl3txNek1t0mtNCu.png"
               alt="Start With YOU - HUMANFIRST BY KK"
               className="w-full h-auto object-cover block"
             />
