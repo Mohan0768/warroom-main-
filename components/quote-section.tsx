@@ -9,7 +9,7 @@ export function QuoteSection() {
           <br />
           has prepared you to ask."
         </blockquote>
-        <p className="text-sm font-medium tracking-wide" style={{ color: 'rgb(217,119,6)' }}>— KK KANNABIRAN</p>
+        <p className="text-sm font-medium tracking-wide" style={{ color: '#D4A017' }}>— KK KANNABIRAN</p>
       </div>
     </section>
   )

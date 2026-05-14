@@ -35,7 +35,7 @@ export default function StartWithYouPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none px-6 sm:px-8 py-3 text-black font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
-              style={{ backgroundColor: 'rgb(217,119,6)' }}
+              style={{ backgroundColor: '#D4A017' }}
             >
               PRE BUSINESS SESSION
             </a>
@@ -44,7 +44,7 @@ export default function StartWithYouPage() {
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base hover:text-black"
-              style={{ borderColor: 'rgb(217,119,6)', color: 'rgb(217,119,6)', backgroundColor: 'transparent' }}
+              style={{ borderColor: '#D4A017', color: '#D4A017', backgroundColor: 'transparent' }}
             >
               CAMPUS FREE SESSION
             </a>
@@ -53,7 +53,7 @@ export default function StartWithYouPage() {
       </section>
 
       {/* Hero Text Section */}
-      <section className="py-10 md:py-14 px-4 md:px-6 text-black" style={{ backgroundColor: 'rgb(217,119,6)' }}>
+      <section className="py-10 md:py-14 px-4 md:px-6 text-black" style={{ backgroundColor: '#D4A017' }}>
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight mb-3 md:mb-4">
             Start With YOU
@@ -98,7 +98,7 @@ export default function StartWithYouPage() {
               </p>
             </div>
 
-            <div className="border-l-4 border-yellow-500 pl-6 space-y-4">
+            <div className="border-l-4 border-amber-600 pl-6 space-y-4">
               <p className="text-base md:text-lg leading-relaxed">
                 Here is what I know about the age of AI: <span className="font-bold">It can answer any question you give it. But it cannot ask the question that only your life has prepared you to ask.</span>
               </p>
@@ -123,17 +123,21 @@ export default function StartWithYouPage() {
             
             {/* Business Conferences */}
             <div className="space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-yellow-600">Business Conferences</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-amber-700">Business Conferences</h3>
               <div className="space-y-4">
-                <div className="border-l-4 border-yellow-500 pl-6 py-2 space-y-3">
+                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
                   <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
                   <p className="text-gray-700">Discover what makes you irreplaceable in an AI-driven world and how to leverage your unique perspective.</p>
                 </div>
-                <div className="border-l-4 border-yellow-500 pl-6 py-2 space-y-3">
+                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
+                  <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
+                  <p className="text-gray-700">Discover what makes you irreplaceable in an AI-driven world and how to leverage your unique perspective.</p>
+                </div>
+                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
                   <h4 className="text-lg md:text-xl font-bold">AI in Leadership - Untold Stories of Managers in AI adoption</h4>
                   <p className="text-gray-700">Real stories from managers navigating AI integration, their challenges, breakthroughs, and lessons learned.</p>
                 </div>
-                <div className="border-l-4 border-yellow-500 pl-6 py-2 space-y-3">
+                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
                   <h4 className="text-lg md:text-xl font-bold">Costly AI Mistakes: The Thinking Gap</h4>
                   <p className="text-gray-700">Learn from the most common strategic mistakes companies make with AI and how to avoid them through better thinking.</p>
                 </div>
@@ -142,7 +146,7 @@ export default function StartWithYouPage() {
                 href="https://calendly.com/mohan20051028/new-meeting"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-yellow-500 text-black font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-black font-bold rounded hover:bg-amber-700 transition-all duration-300 hover:scale-105"
               >
                 👉 Book a pre-session call
               </a>
@@ -153,11 +157,11 @@ export default function StartWithYouPage() {
               <h3 className="text-2xl md:text-3xl font-bold text-blue-600">For Students (Free In-Person Sessions)</h3>
               <p className="text-sm font-medium text-gray-600">Southeast Florida</p>
               <div className="space-y-4">
-                <div className="border-l-4 border-blue-500 pl-6 py-2 space-y-3">
+                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
                   <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
                   <p className="text-gray-700">Understand your unique value in a world where AI is everywhere.</p>
                 </div>
-                <div className="border-l-4 border-blue-500 pl-6 py-2 space-y-3">
+                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
                   <h4 className="text-lg md:text-xl font-bold">Future of Work | Next Gen Entrepreneurs</h4>
                   <p className="text-gray-700">Build the entrepreneurial thinking skills you'll need to thrive in your career.</p>
                 </div>
@@ -166,7 +170,7 @@ export default function StartWithYouPage() {
                 href="https://calendly.com/mohan20051028/new-meeting"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-bold rounded hover:bg-blue-700 transition-all duration-300 hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-white font-bold rounded hover:bg-amber-700 transition-all duration-300 hover:scale-105"
               >
                 👉 Apply for a FREE Campus Session
               </a>
@@ -185,7 +189,7 @@ export default function StartWithYouPage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 md:px-8 py-2 md:py-3 bg-yellow-500 text-black text-sm md:text-base font-bold rounded hover:bg-yellow-600 transition-all duration-300 hover:scale-105"
+              className="inline-block px-6 md:px-8 py-2 md:py-3 bg-amber-600 text-white text-sm md:text-base font-bold rounded hover:bg-amber-700 transition-all duration-300 hover:scale-105"
             >
               BOOK A CALL NOW
             </a>

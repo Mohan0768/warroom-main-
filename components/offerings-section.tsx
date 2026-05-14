@@ -9,13 +9,13 @@ export function OfferingsSection() {
       color: 'bg-black',
       textColor: 'text-white',
       buttonColor: 'text-black',
-      buttonStyle: { backgroundColor: '#F4C430' }
+      buttonStyle: { backgroundColor: '#D4A017' }
     },
     {
       title: 'Start With',
       subtitle: 'YOU — Keynote',
       description: 'Transform how you think about your future. This keynote helps leaders and students understand their power in an AI-driven world.',
-      color: '#F4C430',
+      color: '#D4A017',
       textColor: 'text-black',
       buttonColor: 'text-white',
       buttonStyle: { backgroundColor: 'black' }
@@ -24,7 +24,7 @@ export function OfferingsSection() {
       title: 'The Garage',
       subtitle: 'Build from $0 in 3 Days',
       description: 'An intensive 3-day entrepreneurial sprint where you learn to validate ideas, build MVPs, and think like a founder.',
-      color: '#F4C430',
+      color: '#D4A017',
       textColor: 'text-black',
       buttonColor: 'text-white',
       buttonStyle: { backgroundColor: 'black' }

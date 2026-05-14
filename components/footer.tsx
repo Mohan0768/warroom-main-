@@ -76,7 +76,7 @@ export function Footer() {
             <Link 
               href="#"
               className="px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90 whitespace-nowrap"
-              style={{ backgroundColor: '#F4C430' }}
+              style={{ backgroundColor: '#D4A017' }}
             >
               BOOK A CALL
             </Link>

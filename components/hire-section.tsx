@@ -87,7 +87,7 @@ export function HireSection() {
         <div className="space-y-12">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black mb-4">
-              <span style={{ color: 'rgb(217,119,6)' }}>Let&apos;s build the room.</span>
+              <span style={{ color: '#D4A017' }}>Let&apos;s build the room.</span>
             </h2>
           </div>
 
@@ -109,7 +109,7 @@ export function HireSection() {
                   <label className="block text-sm font-medium text-gray-900 mb-2">
                     Your Name
                   </label>
-                  <input 
+                  <                  <input 
                     type="text"
                     name="name"
                     value={formData.name}
@@ -189,13 +189,13 @@ export function HireSection() {
                 type="submit"
                 disabled={loading}
                 className="px-6 md:px-8 py-2 md:py-3 text-black font-medium rounded disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-300 hover:shadow-lg hover:scale-105"
-                style={{ backgroundColor: 'rgb(217,119,6)' }}
+                style={{ backgroundColor: '#D4A017' }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = 'rgb(180,97,5)'
+                  e.currentTarget.style.backgroundColor = '#B8860B'
                 }}
                 onMouseLeave={(e) => {
                   if (!loading) {
-                    e.currentTarget.style.backgroundColor = 'rgb(217,119,6)'
+                    e.currentTarget.style.backgroundColor = '#D4A017'
                   }
                 }}
               >
