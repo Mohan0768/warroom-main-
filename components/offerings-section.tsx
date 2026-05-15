@@ -160,7 +160,7 @@ export function OfferingsSection() {
                   LEARN MORE
                 </Link>
                 <button
-                  className={`${offering.buttonColor} inline-block px-6 py-2 rounded font-medium text-sm transition-all duration-300 w-fit hover:shadow-lg hover:scale-105 border-2`}
+                  className="inline-block px-6 py-2 rounded font-medium text-sm transition-all duration-300 w-fit hover:shadow-lg hover:scale-105 border-2 text-white"
                   style={{ 
                     borderColor: offering.textColor === 'text-white' ? 'white' : 'black'
                   }}
