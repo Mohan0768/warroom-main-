@@ -16,38 +16,55 @@ export default function StartWithYouPage() {
         </div>
       </header>
 
-      {/* Hero Image and Buttons */}
+      {/* Hero Section with Flex Container */}
       <section className="py-8 md:py-12 px-4 md:px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          {/* Image */}
-          <div className="w-full rounded-lg overflow-hidden mb-6">
-            <img 
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%282%29-YJq8Xvh8LLoc2NXl3txNek1t0mtNCu.png"
-              alt="Start With YOU - HUMANFIRST BY KK"
-              className="w-full h-auto object-cover block"
-            />
-          </div>
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+            {/* Image */}
+            <div className="w-full lg:w-1/2 rounded-lg overflow-hidden flex-shrink-0">
+              <img 
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/START%20WITH-tJS6unEaGZJZ6tBRjbcLC5kyYfOAI7.png"
+                alt="Start With YOU - HUMANFIRST BY KK"
+                className="w-full h-auto object-cover block"
+              />
+            </div>
 
-          {/* Session Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://calendly.com/mohan20051028/new-meeting"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 text-black font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
-              style={{ backgroundColor: '#D4A017' }}
-            >
-              PRE BUSINESS SESSION
-            </a>
-            <a
-              href="https://calendly.com/mohan20051028/new-meeting"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base hover:text-black"
-              style={{ borderColor: '#D4A017', color: '#D4A017', backgroundColor: 'transparent' }}
-            >
-              CAMPUS FREE SESSION
-            </a>
+            {/* Text Content */}
+            <div className="w-full lg:w-1/2 space-y-6 flex flex-col justify-center">
+              <div className="space-y-4">
+                <h2 className="text-3xl md:text-4xl font-black leading-tight">
+                  Start With YOU
+                </h2>
+                <p className="text-gray-700 text-base md:text-lg leading-relaxed italic">
+                  "In the age of AI, the most powerful asset in the room is YOU."
+                </p>
+                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                  <span className="font-semibold">HUMAN ADVANTAGE • ENTREPRENEURIAL THINKING • AI ADOPTION</span>
+                </p>
+              </div>
+
+              {/* Session Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <a
+                  href="https://calendly.com/mohan20051028/new-meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 sm:flex-none px-6 sm:px-8 py-3 text-black font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
+                  style={{ backgroundColor: '#D4A017' }}
+                >
+                  PRE BUSINESS SESSION
+                </a>
+                <a
+                  href="https://calendly.com/mohan20051028/new-meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base hover:text-black"
+                  style={{ borderColor: '#D4A017', color: '#D4A017', backgroundColor: 'transparent' }}
+                >
+                  CAMPUS FREE SESSION
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
