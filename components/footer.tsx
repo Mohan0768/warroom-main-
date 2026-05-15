@@ -31,24 +31,17 @@ export function Footer() {
 
           {/* About */}
           <div>
-            <h3 className="text-sm font-bold mb-4">ABOUT</h3>
-            <ul className="space-y-2 text-xs text-gray-400">
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">About KK</Link></li>
-            
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
             <h3 className="text-sm font-bold mb-4">CONNECT</h3>
             <ul className="space-y-2 text-xs text-gray-400">
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Email</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">LinkedIn</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Facebook</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Instagram</Link></li>
+
             </ul>
           </div>
-        </div>
+
+          
 
         <div className="border-t border-gray-800 pt-8 transition-all duration-300">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
