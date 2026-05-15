@@ -35,7 +35,7 @@ export function Footer() {
             <ul className="space-y-2 text-xs text-gray-400">
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Email</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">LinkedIn</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block"><Facebook></Facebook></Link></li>
+              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Facebook</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Instagram</Link></li>
             </ul>
           </div>
