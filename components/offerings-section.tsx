@@ -151,13 +151,27 @@ export function OfferingsSection() {
                   {offering.description}
                 </p>
               </div>
-              <Link 
-                href={idx === 0 ? '/war-room' : idx === 1 ? '/start-with-you' : '/the-garage'}
-                className={`${offering.buttonColor} inline-block px-6 py-2 rounded font-medium text-sm transition-all duration-300 mt-6 w-fit hover:shadow-lg hover:scale-105`}
-                style={offering.buttonStyle}
-              >
-                LEARN MORE
-              </Link>
+              <div className="flex flex-col gap-3 mt-6">
+                <Link 
+                  href={idx === 0 ? '/war-room' : idx === 1 ? '/start-with-you' : '/the-garage'}
+                  className={`${offering.buttonColor} inline-block px-6 py-2 rounded font-medium text-sm transition-all duration-300 w-fit hover:shadow-lg hover:scale-105`}
+                  style={offering.buttonStyle}
+                >
+                  LEARN MORE
+                </Link>
+                <button
+                  className="inline-block px-6 py-2 rounded font-medium text-sm transition-all duration-300 w-fit hover:shadow-lg hover:scale-105 border-2 text-white"
+                  style={{ 
+                    borderColor: offering.textColor === 'text-white' ? 'white' : 'black'
+                  }}
+                  onClick={() => {
+                    // Open Calendly or your booking system
+                    window.open('https://calendly.com', '_blank')
+                  }}
+                >
+                  BOOK A CALL
+                </button>
+              </div>
             </div>
           ))}
         </div>
