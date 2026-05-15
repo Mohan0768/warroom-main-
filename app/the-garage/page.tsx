@@ -21,7 +21,7 @@ export default function TheGaragePage() {
             Build from $0 in 3 Days
           </h1>
           <p className="text-base md:text-lg lg:text-xl text-black/80 mb-8 leading-relaxed">
-            An intensive 3-day entrepreneurial sprint where you validate ideas, build MVPs, and learn to think like a founder. No experience necessary.
+            Build a business in 3 days from $0. Build a working prototype, and secure a pre-sale or investor conversation, all within 3 days.
           </p>
         </div>
       </section>

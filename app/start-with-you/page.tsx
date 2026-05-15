@@ -98,7 +98,7 @@ export default function StartWithYouPage() {
             Leadership Keynote
           </h1>
           <p className="text-base md:text-lg leading-relaxed">
-            Transform how you think about your future. This keynote helps leaders and students understand their power in an AI-driven world and build clarity and confidence.
+            The YOU Framework gives the audience clarity on their story, their obsession, and their advantage makes them irreplaceable in an AI-driven world.
           </p>
         </div>
       </section>
