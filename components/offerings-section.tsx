@@ -35,7 +35,7 @@ export function OfferingsSection() {
     <section className="py-16 md:py-20 px-4 md:px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12 md:mb-16">
-          <p className="text-xs md:text-sm font-medium text-gray-500 tracking-wide mb-4">THREE WAYS TO WORK WITH KK</p>
+          <p className="text-xs md:text-sm font-medium text-gray-500 tracking-wide mb-2">Human Advantage • Entrepreneurial Thinking • AI Adoption</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight">
             Think. Adapt.
             <br />
