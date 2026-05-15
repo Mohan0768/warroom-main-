@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Start With YOU - Leadership Keynote | humanfirstbykk',
-  description: 'Transform how leaders and students understand their power in an AI-driven world. This keynote helps you build clarity and confidence for the future.',
+  description: 'The YOU Framework gives the audience clarity on their story, their obsession, and their advantage makes them irreplaceable in an AI-driven world.',
 }
 
 export default function StartWithYouPage() {

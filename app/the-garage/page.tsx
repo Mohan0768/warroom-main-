@@ -4,7 +4,7 @@ import { Footer } from '@/components/footer'
 
 export const metadata = {
   title: 'The Garage - 3-Day Startup Bootcamp | humanfirstbykk',
-  description: 'An intensive 3-day entrepreneurial sprint where you learn to validate ideas, build MVPs, and think like a founder. From $0 to execution in 72 hours.',
+  description: 'Build a business in 3 days from $0. Build a working prototype, and secure a pre-sale or investor conversation, all within 3 days.',
 }
 
 export default function TheGaragePage() {

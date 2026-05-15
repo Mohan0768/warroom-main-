@@ -5,7 +5,7 @@ import { WarRoomAudio } from '@/components/war-room-audio'
 
 export const metadata = {
   title: 'WAR ROOM LHS - Live Business Simulation | humanfirstbykk',
-  description: 'Experience a 6-stage intensive business simulation where you build a company from scratch, make real decisions, and understand consequences in a risk-free environment.',
+  description: 'Step into KK’s WAR ROOM, a live business simulation with LIVE Shark Tank–style deal negotiations, powered by AI.',
 }
 
 export default function WarRoomPage() {
