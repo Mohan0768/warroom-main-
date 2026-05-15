@@ -165,8 +165,7 @@ export default function StartWithYouPage() {
                 <h3 className="text-2xl md:text-3xl font-bold text-amber-700">Business Conferences</h3>
                 <div className="space-y-4">
                   <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
-                    <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
-                    <p className="text-gray-700">Discover what makes you irreplaceable in an AI-driven world and how to leverage your unique perspective.</p>
+                  
                   </div>
                   <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
                     <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
