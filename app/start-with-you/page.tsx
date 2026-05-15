@@ -74,7 +74,7 @@ export default function StartWithYouPage() {
               className="flex-1 sm:flex-none px-6 sm:px-8 py-3 text-black font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
               style={{ backgroundColor: '#D4A017' }}
             >
-              PRE BUSINESS SESSION
+              FOR BUSINESS 
             </a>
             <a
               href="https://calendly.com/mohan20051028/new-meeting"
@@ -83,7 +83,7 @@ export default function StartWithYouPage() {
               className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base hover:text-black"
               style={{ borderColor: '#D4A017', color: '#D4A017', backgroundColor: 'transparent' }}
             >
-              CAMPUS FREE SESSION
+              FOR STUDENTS
             </a>
           </div>
         </div>
@@ -211,7 +211,7 @@ export default function StartWithYouPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-black font-bold rounded hover:bg-amber-700 transition-all duration-300 hover:scale-105"
                 >
-                  👉 Apply for a FREE Campus Session
+                   Apply for a FREE Campus Session
                 </a>
               </div>
             </div>
