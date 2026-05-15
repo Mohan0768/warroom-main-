@@ -33,10 +33,10 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-bold mb-4">CONNECT</h3>
             <ul className="space-y-2 text-xs text-gray-400">
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Email</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">LinkedIn</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Facebook</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Instagram</Link></li>
+              <li><a href="mailto:kkhumanfirst@gmail.com" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/keerthigak/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">LinkedIn</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61589693099133" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Facebook</a></li>
+              <li><a href="https://www.instagram.com/kkkannabiran/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Instagram</a></li>
             </ul>
           </div>
         </div>
