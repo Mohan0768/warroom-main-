@@ -42,7 +42,7 @@ export function OfferingsSection() {
     {
       title: 'WAR ROOM',
       subtitle: 'Live Business Simulation',
-      description: 'A 6-stage intensive simulation where you build a business from scratch, make real decisions, and experience the consequences in a risk-free environment.',
+      description: 'Step into KK’s WAR ROOM, a live business simulation with LIVE Shark Tank–style deal negotiations, powered by AI.',
       color: 'linear-gradient(135deg, #1a1a1a 0%, #2d1810 50%, #1a1a1a 100%)',
       textColor: 'text-white',
       buttonColor: 'text-black',
@@ -52,7 +52,7 @@ export function OfferingsSection() {
     {
       title: 'Start With',
       subtitle: 'YOU — Keynote',
-      description: 'Transform how you think about your future. This keynote helps leaders and students understand their power in an AI-driven world.',
+      description: 'The YOU Framework gives the audience clarity on their story, their obsession, and their advantage makes them irreplaceable in an AI-driven world.',
       color: '#6B7280',
       textColor: 'text-white',
       buttonColor: 'text-white',
@@ -61,7 +61,7 @@ export function OfferingsSection() {
     {
       title: 'The Garage',
       subtitle: 'Build from $0 in 3 Days',
-      description: 'An intensive 3-day entrepreneurial sprint where you learn to validate ideas, build MVPs, and think like a founder.',
+      description: 'Build a business in 3 days from $0. Build a working prototype, and secure a pre-sale or investor conversation, all within 3 days.',
       color: '#D4A017',
       textColor: 'text-black',
       buttonColor: 'text-white',
@@ -75,9 +75,9 @@ export function OfferingsSection() {
         <div className="mb-12 md:mb-16">
           <p className="text-xs md:text-sm font-medium text-gray-500 tracking-wide mb-4">THREE WAYS TO WORK WITH KK</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight">
-            Think. Adapt.
+            Human Advantage . Entrepreneurial Thinking .
             <br />
-            Stay in control.
+            AI Adoption.
           </h2>
         </div>
 
