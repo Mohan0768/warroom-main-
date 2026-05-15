@@ -123,9 +123,21 @@ export function HeroSection() {
         <div className="w-full flex flex-col items-center justify-start lg:justify-end animate-fadeInUp max-w-4xl mx-auto flex-none lg:flex-1 pb-4 text-center" style={{ animationDelay: '0.1s' }}>
           {/* Main Headline */}
           <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight text-white mb-1 md:mb-2 text-center text-balance">
-            AI can answer any question - But it cannot ask the question that only your life has prepared you to ask{' '}
-            <span style={{ color: '#D4A017' }}>- KK</span>
+            Human Advantage • Entrepreneurial Thinking • AI Adoption
           </h1>
+
+          {/* Command Line Quote */}
+          <div className="mb-3 mt-2 bg-gray-900 border border-gray-700 rounded p-3 w-full max-w-2xl font-mono text-xs sm:text-sm">
+            <div className="text-green-400 text-left">
+              <span className="text-gray-500">{'>'}</span> {'"AI can answer any question you give it — but it cannot ask the question that only your'}
+            </div>
+            <div className="text-green-400 text-left ml-4">
+              {'life has prepared you to ask."'}
+            </div>
+            <div className="text-green-400 text-left">
+              <span className="text-gray-500">{'>'}</span> — KK KANNABIRAN
+            </div>
+          </div>
 
           {/* Description */}
           <p className="text-xs text-gray-300 leading-relaxed mb-1 text-center">
