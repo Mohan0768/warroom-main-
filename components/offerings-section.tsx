@@ -153,7 +153,9 @@ export function OfferingsSection() {
               </div>
               <div className="flex flex-col gap-3 mt-6">
                 <Link 
-                  href={idx === 0 ? '/war-room' : idx === 1 ? '/start-with-you' : '/the-garage'}
+                  href={idx === 0 ? 'https://v0-gaming-website-eosin.vercel.app/' : idx === 1 ? '/start-with-you' : '/the-garage'}
+                  target={idx === 0 ? '_blank' : undefined}
+                  rel={idx === 0 ? 'noopener noreferrer' : undefined}
                   className={`${offering.buttonColor} inline-block px-6 py-2 rounded font-medium text-sm transition-all duration-300 w-fit hover:shadow-lg hover:scale-105`}
                   style={offering.buttonStyle}
                 >
