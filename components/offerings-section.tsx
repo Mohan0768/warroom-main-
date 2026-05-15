@@ -75,9 +75,9 @@ export function OfferingsSection() {
         <div className="mb-12 md:mb-16">
           <p className="text-xs md:text-sm font-medium text-gray-500 tracking-wide mb-4">THREE WAYS TO WORK WITH KK</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black leading-tight">
-            Human Advantage . Entrepreneurial Thinking .
+            Human Advantage - Entrepreneurial Thinking -
             <br />
-            AI Adoption.
+            AI Adoption
           </h2>
         </div>
 
