@@ -158,59 +158,62 @@ export default function StartWithYouPage() {
           <div className="space-y-8">
             <h2 className="text-3xl md:text-4xl font-black">Hire Me to Speak</h2>
             
-            {/* Business Conferences */}
-            <div className="space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-amber-700">Business Conferences</h3>
-              <div className="space-y-4">
-                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
-                  <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
-                  <p className="text-gray-700">Discover what makes you irreplaceable in an AI-driven world and how to leverage your unique perspective.</p>
+            {/* Left and Right Split Container */}
+            <div className="flex flex-col md:flex-row gap-8 md:gap-6">
+              {/* Left Side - Business Conferences */}
+              <div className="flex-1 space-y-6">
+                <h3 className="text-2xl md:text-3xl font-bold text-amber-700">Business Conferences</h3>
+                <div className="space-y-4">
+                  <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
+                    <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
+                    <p className="text-gray-700">Discover what makes you irreplaceable in an AI-driven world and how to leverage your unique perspective.</p>
+                  </div>
+                  <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
+                    <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
+                    <p className="text-gray-700">Discover what makes you irreplaceable in an AI-driven world and how to leverage your unique perspective.</p>
+                  </div>
+                  <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
+                    <h4 className="text-lg md:text-xl font-bold">AI in Leadership - Untold Stories of Managers in AI adoption</h4>
+                    <p className="text-gray-700">Real stories from managers navigating AI integration, their challenges, breakthroughs, and lessons learned.</p>
+                  </div>
+                  <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
+                    <h4 className="text-lg md:text-xl font-bold">Costly AI Mistakes: The Thinking Gap</h4>
+                    <p className="text-gray-700">Learn from the most common strategic mistakes companies make with AI and how to avoid them through better thinking.</p>
+                  </div>
                 </div>
-                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
-                  <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
-                  <p className="text-gray-700">Discover what makes you irreplaceable in an AI-driven world and how to leverage your unique perspective.</p>
-                </div>
-                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
-                  <h4 className="text-lg md:text-xl font-bold">AI in Leadership - Untold Stories of Managers in AI adoption</h4>
-                  <p className="text-gray-700">Real stories from managers navigating AI integration, their challenges, breakthroughs, and lessons learned.</p>
-                </div>
-                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
-                  <h4 className="text-lg md:text-xl font-bold">Costly AI Mistakes: The Thinking Gap</h4>
-                  <p className="text-gray-700">Learn from the most common strategic mistakes companies make with AI and how to avoid them through better thinking.</p>
-                </div>
+                <a
+                  href="https://calendly.com/mohan20051028/new-meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-black font-bold rounded hover:bg-amber-700 transition-all duration-300 hover:scale-105"
+                >
+                   Book a pre-session call
+                </a>
               </div>
-              <a
-                href="https://calendly.com/mohan20051028/new-meeting"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-black font-bold rounded hover:bg-amber-700 transition-all duration-300 hover:scale-105"
-              >
-                 Book a pre-session call
-              </a>
-            </div>
 
-            {/* Students Section */}
-            <div className="space-y-6 bg-blue-50 p-6 md:p-8 rounded-lg">
-              <h3 className="text-2xl md:text-3xl font-bold text-blue-600">For Students (Free In-Person Sessions)</h3>
-              <p className="text-sm font-medium text-gray-600">Southeast Florida</p>
-              <div className="space-y-4">
-                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
-                  <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
-                  <p className="text-gray-700">Understand your unique value in a world where AI is everywhere.</p>
+              {/* Right Side - Students Section */}
+              <div className="flex-1 space-y-6 bg-blue-50 p-6 md:p-8 rounded-lg">
+                <h3 className="text-2xl md:text-3xl font-bold text-blue-600">For Students (Free In-Person Sessions)</h3>
+                <p className="text-sm font-medium text-gray-600">Southeast Florida</p>
+                <div className="space-y-4">
+                  <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
+                    <h4 className="text-lg md:text-xl font-bold">AI can't replace YOU</h4>
+                    <p className="text-gray-700">Understand your unique value in a world where AI is everywhere.</p>
+                  </div>
+                  <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
+                    <h4 className="text-lg md:text-xl font-bold">Future of Work | Next Gen Entrepreneurs</h4>
+                    <p className="text-gray-700">Build the entrepreneurial thinking skills you'll need to thrive in your career.</p>
+                  </div>
                 </div>
-                <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
-                  <h4 className="text-lg md:text-xl font-bold">Future of Work | Next Gen Entrepreneurs</h4>
-                  <p className="text-gray-700">Build the entrepreneurial thinking skills you'll need to thrive in your career.</p>
-                </div>
+                <a
+                  href="https://calendly.com/mohan20051028/new-meeting"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-black font-bold rounded hover:bg-amber-700 transition-all duration-300 hover:scale-105"
+                >
+                  👉 Apply for a FREE Campus Session
+                </a>
               </div>
-              <a
-                href="https://calendly.com/mohan20051028/new-meeting"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-amber-600 text-white font-bold rounded hover:bg-amber-700 transition-all duration-300 hover:scale-105"
-              >
-                👉 Apply for a FREE Campus Session
-              </a>
             </div>
           </div>
 
