@@ -25,7 +25,7 @@ export function Footer() {
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">War Room</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Start With You</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">The Garage</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Keynotes</Link></li>
+              
             </ul>
           </div>
 
