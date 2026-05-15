@@ -25,7 +25,7 @@ export function Footer() {
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">War Room</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Start With You</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">The Garage</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Keynotes</Link></li>
+              
             </ul>
           </div>
 
@@ -34,9 +34,7 @@ export function Footer() {
             <h3 className="text-sm font-bold mb-4">ABOUT</h3>
             <ul className="space-y-2 text-xs text-gray-400">
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">About KK</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Blog</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Podcast</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Press</Link></li>
+            
             </ul>
           </div>
 
@@ -46,7 +44,7 @@ export function Footer() {
             <ul className="space-y-2 text-xs text-gray-400">
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Email</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">LinkedIn</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Twitter</Link></li>
+              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Facebook</Link></li>
               <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Instagram</Link></li>
             </ul>
           </div>
