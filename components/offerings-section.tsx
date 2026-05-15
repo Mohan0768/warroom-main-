@@ -1,6 +1,34 @@
+'use client'
+
 import Link from 'next/link'
+import { useState } from 'react'
 
 export function OfferingsSection() {
+  const [sparks, setSparks] = useState<Array<{ id: number; x: number; y: number; tx: number; ty: number }>>([])
+  let sparkId = 0
+
+  const createSparks = (e: React.MouseEvent | React.TouchEvent) => {
+    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect()
+    const x = 'touches' in e ? e.touches[0].clientX - rect.left : (e as React.MouseEvent).clientX - rect.left
+    const y = 'touches' in e ? e.touches[0].clientY - rect.top : (e as React.MouseEvent).clientY - rect.top
+
+    const newSparks = Array.from({ length: 8 }).map(() => ({
+      id: sparkId++,
+      x,
+      y,
+      tx: (Math.random() - 0.5) * 200,
+      ty: (Math.random() - 0.5) * 200 - 100
+    }))
+
+    setSparks(prev => [...prev, ...newSparks])
+
+    newSparks.forEach(spark => {
+      setTimeout(() => {
+        setSparks(prev => prev.filter(s => s.id !== spark.id))
+      }, 800)
+    })
+  }
+
   const offerings = [
     {
       title: 'WAR ROOM',
@@ -55,8 +83,30 @@ export function OfferingsSection() {
             0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 53, 0.4), 0 0 40px rgba(255, 107, 53, 0.2); }
             50% { box-shadow: 0 0 30px rgba(255, 107, 53, 0.6), 0 0 60px rgba(255, 107, 53, 0.3); }
           }
+          @keyframes spark {
+            0% {
+              opacity: 1;
+              transform: translate(0, 0) scale(1);
+            }
+            100% {
+              opacity: 0;
+              transform: translate(var(--tx), var(--ty)) scale(0);
+            }
+          }
           .war-room-card {
             animation: fireFlicker 4s ease-in-out infinite, fireGlow 3s ease-in-out infinite;
+            position: relative;
+            overflow: hidden;
+          }
+          .spark {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: radial-gradient(circle, #FF6B35, #FF4500);
+            border-radius: 50%;
+            pointer-events: none;
+            box-shadow: 0 0 8px rgba(255, 107, 53, 0.8);
+            animation: spark 0.8s ease-out forwards;
           }
         `}</style>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -68,7 +118,21 @@ export function OfferingsSection() {
                 ...(typeof offering.color !== 'string' || !offering.color.startsWith('bg-') ? { background: offering.color } : {}),
                 animationDelay: `${idx * 0.1}s`
               }}
+              onMouseMove={offering.hasFireEffect ? createSparks : undefined}
+              onTouchMove={offering.hasFireEffect ? createSparks : undefined}
             >
+              {offering.hasFireEffect && sparks.map(spark => (
+                <div
+                  key={spark.id}
+                  className="spark"
+                  style={{
+                    left: spark.x,
+                    top: spark.y,
+                    '--tx': `${spark.tx}px`,
+                    '--ty': `${spark.ty}px`
+                  } as React.CSSProperties & { '--tx': string; '--ty': string }}
+                />
+              ))}
               <div>
                 <h3 className="text-3xl md:text-4xl font-black leading-tight mb-4">
                   {offering.title}
