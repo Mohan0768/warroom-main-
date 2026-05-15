@@ -1,33 +1,42 @@
 'use client'
 
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 export function OfferingsSection() {
   const [sparks, setSparks] = useState<Array<{ id: number; x: number; y: number; tx: number; ty: number }>>([])
-  let sparkId = 0
+  const sparkIdRef = useRef(0)
+  const warRoomRefRef = useRef<HTMLDivElement>(null)
 
-  const createSparks = (e: React.MouseEvent | React.TouchEvent) => {
-    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect()
-    const x = 'touches' in e ? e.touches[0].clientX - rect.left : (e as React.MouseEvent).clientX - rect.left
-    const y = 'touches' in e ? e.touches[0].clientY - rect.top : (e as React.MouseEvent).clientY - rect.top
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (warRoomRefRef.current) {
+        const rect = warRoomRefRef.current.getBoundingClientRect()
+        const parentRect = warRoomRefRef.current.parentElement?.getBoundingClientRect()
+        
+        if (parentRect) {
+          const x = Math.random() * (warRoomRefRef.current.offsetWidth - 20)
+          const y = Math.random() * (warRoomRefRef.current.offsetHeight - 20)
 
-    const newSparks = Array.from({ length: 8 }).map(() => ({
-      id: sparkId++,
-      x,
-      y,
-      tx: (Math.random() - 0.5) * 200,
-      ty: (Math.random() - 0.5) * 200 - 100
-    }))
+          const newSpark = {
+            id: sparkIdRef.current++,
+            x,
+            y,
+            tx: (Math.random() - 0.5) * 200,
+            ty: (Math.random() - 0.5) * 200 - 100
+          }
 
-    setSparks(prev => [...prev, ...newSparks])
+          setSparks(prev => [...prev, newSpark])
 
-    newSparks.forEach(spark => {
-      setTimeout(() => {
-        setSparks(prev => prev.filter(s => s.id !== spark.id))
-      }, 800)
-    })
-  }
+          setTimeout(() => {
+            setSparks(prev => prev.filter(s => s.id !== newSpark.id))
+          }, 800)
+        }
+      }
+    }, 300)
+
+    return () => clearInterval(interval)
+  }, [])
 
   const offerings = [
     {
@@ -113,13 +122,12 @@ export function OfferingsSection() {
           {offerings.map((offering, idx) => (
             <div 
               key={idx}
+              ref={offering.hasFireEffect ? warRoomRefRef : null}
               className={`${typeof offering.color === 'string' && offering.color.startsWith('bg-') ? offering.color : ''} ${offering.textColor} p-6 md:p-8 rounded-lg flex flex-col justify-between min-h-72 md:min-h-96 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 ${offering.hasFireEffect ? 'war-room-card' : ''}`}
               style={{ 
                 ...(typeof offering.color !== 'string' || !offering.color.startsWith('bg-') ? { background: offering.color } : {}),
                 animationDelay: `${idx * 0.1}s`
               }}
-              onMouseMove={offering.hasFireEffect ? createSparks : undefined}
-              onTouchMove={offering.hasFireEffect ? createSparks : undefined}
             >
               {offering.hasFireEffect && sparks.map(spark => (
                 <div
