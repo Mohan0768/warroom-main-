@@ -33,7 +33,7 @@ export function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-2 lg:gap-3">
-            <a href="https://warroom-frontend-410969764896.us-central1.run.app/" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 text-black text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
+            <a href="https://v0-gaming-website-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 text-black text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
               ENTER WAR ROOM
             </a>
             <a href="https://calendly.com/mohan20051028/new-meeting" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 text-black text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
