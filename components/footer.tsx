@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="bg-black text-white py-12 md:py-16 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex flex-col items-start">
@@ -29,25 +29,14 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* About */}
-          <div>
-            <h3 className="text-sm font-bold mb-4">ABOUT</h3>
-            <ul className="space-y-2 text-xs text-gray-400">
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">About KK</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Blog</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Podcast</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Press</Link></li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
             <h3 className="text-sm font-bold mb-4">CONNECT</h3>
             <ul className="space-y-2 text-xs text-gray-400">
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Email</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">LinkedIn</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Twitter</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Instagram</Link></li>
+              <li><a href="mailto:kkhumanfirst@gmail.com" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Email</a></li>
+              <li><a href="https://www.linkedin.com/in/keerthigak/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">LinkedIn</a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=61589693099133" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Facebook</a></li>
+              <li><a href="https://www.instagram.com/kkkannabiran/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Instagram</a></li>
             </ul>
           </div>
         </div>
