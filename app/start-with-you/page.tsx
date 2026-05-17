@@ -242,19 +242,6 @@ export default function StartWithYouPage() {
             </a>
           </div>
         </div>
-
-        {/* Developer Footer */}
-        <div className="mt-12 pt-8 border-t border-gray-300 text-center transition-all duration-300">
-          <p className="text-xs text-gray-500">
-            Page Developed by <span className="font-semibold text-gray-700">Mohan</span> &nbsp;|&nbsp; Email:&nbsp;
-            <a 
-              href="mailto:mohan20051028@gmail.com" 
-              className="text-amber-600 hover:text-amber-700 transition-colors duration-300"
-            >
-              mohan20051028@gmail.com
-            </a>
-          </p>
-        </div>
       </section>
     </main>
   )
