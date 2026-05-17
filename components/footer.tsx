@@ -25,7 +25,6 @@ export function Footer() {
                 kk.humanfirst@gmail.com
               </a>
             </div>
-            <p className="text-xs text-gray-500 mt-2">Click to send an email</p>
           </div>
         </>
       )}
