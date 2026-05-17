@@ -162,7 +162,7 @@ export default function StartWithYouPage() {
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-8">
               {/* Left Side - Business Conferences */}
               <div className="flex-1 flex flex-col">
-                <div className="bg-transparent border border-gray-200 rounded-xl p-8 md:p-10 flex-1 flex flex-col">
+                <div className="bg-orange-50 border border-gray-200 rounded-xl p-8 md:p-10 flex-1 flex flex-col">
                   <h3 className="text-2xl md:text-3xl font-bold text-amber-700 mb-8">Business Conferences</h3>
                   <div className="space-y-6 flex-1">
                     <div className="space-y-3 pb-6 border-b border-gray-100">
@@ -192,7 +192,7 @@ export default function StartWithYouPage() {
 
               {/* Right Side - Students Section */}
               <div className="flex-1 flex flex-col">
-                <div className="bg-transparent border border-gray-200 rounded-xl p-8 md:p-10 flex-1 flex flex-col">
+                <div className="bg-blue-50 border border-gray-200 rounded-xl p-8 md:p-10 flex-1 flex flex-col">
                   <h3 className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">For Students</h3>
                   <p className="text-sm font-medium text-gray-600 mb-8">(Free In-Person Sessions)</p>
                   <div className="space-y-6 flex-1">
