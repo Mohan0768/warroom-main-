@@ -71,6 +71,18 @@ export function Footer() {
             </Link>
           </div>
         </div>
+
+        <div className="mt-8 pt-8 border-t border-gray-800 transition-all duration-300">
+          <p className="text-xs text-gray-500 text-center">
+            Page Developed by <span className="font-semibold text-gray-400">Mohan</span> &nbsp;|&nbsp; Email:&nbsp;
+            <a 
+              href="mailto:mohan20051028@gmail.com" 
+              className="text-amber-600 hover:text-amber-500 transition-colors duration-300"
+            >
+              mohan20051028@gmail.com
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   )

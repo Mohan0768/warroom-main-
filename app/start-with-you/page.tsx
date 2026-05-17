@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { Footer } from '@/components/footer'
 
 export const metadata = {
   title: 'Start With YOU - Leadership Keynote | humanfirstbykk',
@@ -243,6 +244,8 @@ export default function StartWithYouPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </main>
   )
 }
