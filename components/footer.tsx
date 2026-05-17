@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { Mail, Linkedin, Facebook, Instagram } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -32,11 +33,31 @@ export function Footer() {
           {/* Contact */}
           <div>
             <h3 className="text-sm font-bold mb-4">CONNECT</h3>
-            <ul className="space-y-2 text-xs text-gray-400">
-              <li><a href="mailto:kkhumanfirst@gmail.com" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Email</a></li>
-              <li><a href="https://www.linkedin.com/in/keerthigak/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">LinkedIn</a></li>
-              <li><a href="https://www.facebook.com/profile.php?id=61589693099133" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Facebook</a></li>
-              <li><a href="https://www.instagram.com/kkkannabiran/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Instagram</a></li>
+            <ul className="space-y-3 text-xs text-gray-400">
+              <li>
+                <a href="mailto:kkhumanfirst@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors duration-300 hover:translate-x-1 inline-flex">
+                  <Mail size={16} />
+                  Email
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/keerthigak/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors duration-300 hover:translate-x-1 inline-flex">
+                  <Linkedin size={16} />
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61589693099133" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors duration-300 hover:translate-x-1 inline-flex">
+                  <Facebook size={16} />
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/kkkannabiran/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors duration-300 hover:translate-x-1 inline-flex">
+                  <Instagram size={16} />
+                  Instagram
+                </a>
+              </li>
             </ul>
           </div>
         </div>
