@@ -161,10 +161,10 @@ export default function StartWithYouPage() {
             {/* Left and Right Split Container */}
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-8">
               {/* Left Side - Business Conferences */}
-              <div className="flex-1">
-                <div className="bg-transparent border border-gray-200 rounded-xl p-8 md:p-10 h-full">
+              <div className="flex-1 flex flex-col">
+                <div className="bg-transparent border border-gray-200 rounded-xl p-8 md:p-10 flex-1 flex flex-col">
                   <h3 className="text-2xl md:text-3xl font-bold text-amber-700 mb-8">Business Conferences</h3>
-                  <div className="space-y-6">
+                  <div className="space-y-6 flex-1">
                     <div className="space-y-3 pb-6 border-b border-gray-100">
                       <h4 className="text-lg md:text-xl font-bold text-black">AI can't replace YOU</h4>
                       <p className="text-gray-600 leading-relaxed">Discover what makes you irreplaceable in an AI-driven world and how to leverage your unique perspective.</p>
@@ -182,7 +182,8 @@ export default function StartWithYouPage() {
                     href="https://calendly.com/mohan20051028/new-meeting"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-8 px-6 py-3 bg-amber-600 text-black font-bold rounded-lg hover:bg-amber-700 transition-all duration-300 hover:scale-105"
+                    className="mt-8 px-6 py-3 text-black font-bold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 text-center"
+                    style={{ backgroundColor: '#D4A017' }}
                   >
                     Book a pre-session call
                   </a>
@@ -190,12 +191,11 @@ export default function StartWithYouPage() {
               </div>
 
               {/* Right Side - Students Section */}
-              <div className="flex-1">
-                <div className="bg-transparent border border-gray-200 rounded-xl p-8 md:p-10 h-full">
+              <div className="flex-1 flex flex-col">
+                <div className="bg-transparent border border-gray-200 rounded-xl p-8 md:p-10 flex-1 flex flex-col">
                   <h3 className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">For Students</h3>
                   <p className="text-sm font-medium text-gray-600 mb-8">(Free In-Person Sessions)</p>
-                  <p className="text-sm font-medium text-gray-500 mb-8">Southeast Florida</p>
-                  <div className="space-y-6">
+                  <div className="space-y-6 flex-1">
                     <div className="space-y-3 pb-6 border-b border-gray-100">
                       <h4 className="text-lg md:text-xl font-bold text-black">AI can't replace YOU</h4>
                       <p className="text-gray-600 leading-relaxed">Understand your unique value in a world where AI is everywhere.</p>
@@ -213,7 +213,8 @@ export default function StartWithYouPage() {
                     href="https://calendly.com/mohan20051028/new-meeting"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block mt-8 px-6 py-3 bg-amber-600 text-black font-bold rounded-lg hover:bg-amber-700 transition-all duration-300 hover:scale-105"
+                    className="mt-8 px-6 py-3 text-black font-bold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 text-center"
+                    style={{ backgroundColor: '#D4A017' }}
                   >
                     Apply for a FREE Campus Session
                   </a>
@@ -234,7 +235,8 @@ export default function StartWithYouPage() {
               href="https://calendly.com/mohan20051028/new-meeting"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 md:px-8 py-2 md:py-3 bg-amber-600 text-white text-sm md:text-base font-bold rounded hover:bg-amber-700 transition-all duration-300 hover:scale-105"
+              className="inline-block px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-bold rounded hover:shadow-lg transition-all duration-300 hover:scale-105"
+              style={{ backgroundColor: '#D4A017' }}
             >
               BOOK A CALL NOW
             </a>
