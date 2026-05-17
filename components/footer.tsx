@@ -2,9 +2,49 @@
 
 import Link from 'next/link'
 import { Mail, Linkedin, Facebook, Instagram } from 'lucide-react'
+import { useState } from 'react'
 
 export function Footer() {
+  const [showEmailPopup, setShowEmailPopup] = useState(false)
   return (
+    <>
+      {/* Email Popup */}
+      {showEmailPopup && (
+        <>
+          <div 
+            className="fixed inset-0 bg-black/30 z-50 cursor-pointer"
+            onClick={() => setShowEmailPopup(false)}
+          />
+          <div className="fixed bottom-32 right-8 bg-white/95 backdrop-blur-sm text-gray-900 rounded-lg shadow-xl p-4 z-50 w-64 animate-slideInUp">
+            <div className="text-sm font-semibold mb-2">Email Address</div>
+            <div className="flex items-center justify-between">
+              <a 
+                href="mailto:kk.humanfirst@gmail.com"
+                className="text-red-600 hover:text-red-700 font-medium text-sm break-all"
+              >
+                kk.humanfirst@gmail.com
+              </a>
+            </div>
+          </div>
+        </>
+      )}
+
+      <style jsx>{`
+        @keyframes slideInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-slideInUp {
+          animation: slideInUp 0.3s ease-out;
+        }
+      `}</style>
+
     <footer className="bg-black text-white py-12 md:py-16 px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mb-12">
@@ -35,10 +75,13 @@ export function Footer() {
             <h3 className="text-sm font-bold mb-4">CONNECT</h3>
             <ul className="space-y-3 text-xs text-gray-400">
               <li>
-                <a href="mailto:kkhumanfirst@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors duration-300 hover:translate-x-1 inline-flex">
+                <button 
+                  onClick={() => setShowEmailPopup(!showEmailPopup)}
+                  className="flex items-center gap-2 hover:text-white transition-colors duration-300 hover:translate-x-1 inline-flex cursor-pointer"
+                >
                   <Mail size={16} />
                   Email
-                </a>
+                </button>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/keerthigak/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors duration-300 hover:translate-x-1 inline-flex">
@@ -106,5 +149,6 @@ export function Footer() {
         </div>
       </div>
     </footer>
+    </>
   )
 }

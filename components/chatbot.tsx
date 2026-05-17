@@ -52,10 +52,10 @@ export function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: 'Hi! 👋 I\'m here to help answer questions about humanfirstbykk programs. What would you like to know?',
+      text: 'Hi! 👋 What are you interested in?',
       sender: 'bot',
       timestamp: new Date(),
-      quickReplies: QUICK_REPLIES,
+      quickReplies: ['WAR ROOM Business Simulation', 'Keynote', 'Workshop'],
     },
   ])
   const [inputValue, setInputValue] = useState('')
@@ -132,6 +132,37 @@ export function Chatbot() {
       let botResponse: Message
 
       if (
+        text.toLowerCase().includes('war room') ||
+        text.toLowerCase().includes('business simulation')
+      ) {
+        botResponse = {
+          id: (Date.now() + 1).toString(),
+          text: 'Great choice! The WAR ROOM is a live business simulation where participants navigate a company through multiple stages of growth. It combines strategic thinking, rapid decision-making, and real-world business scenarios. Would you like to book a call to learn more?',
+          sender: 'bot',
+          timestamp: new Date(),
+          quickReplies: ['Book a call', 'More questions', 'Contact us'],
+        }
+      } else if (
+        text.toLowerCase().includes('keynote')
+      ) {
+        botResponse = {
+          id: (Date.now() + 1).toString(),
+          text: 'Excellent! Our keynotes focus on building entrepreneurial thinking and preparing for an AI-driven future. They\'re perfect for conferences, corporate events, and educational institutions. Would you like to schedule a speaking engagement?',
+          sender: 'bot',
+          timestamp: new Date(),
+          quickReplies: ['Book a call', 'More questions', 'Contact us'],
+        }
+      } else if (
+        text.toLowerCase().includes('workshop')
+      ) {
+        botResponse = {
+          id: (Date.now() + 1).toString(),
+          text: 'Perfect! Our workshops are interactive sessions designed to develop strategic thinking and decision-making skills. They can be customized for your organization\'s specific needs. Would you like to discuss a workshop for your team?',
+          sender: 'bot',
+          timestamp: new Date(),
+          quickReplies: ['Book a call', 'More questions', 'Contact us'],
+        }
+      } else if (
         text.toLowerCase().includes('book') ||
         text.toLowerCase().includes('call') ||
         text.toLowerCase().includes('meeting')
