@@ -35,7 +35,7 @@ export function Footer() {
             <h3 className="text-sm font-bold mb-4">CONNECT</h3>
             <ul className="space-y-3 text-xs text-gray-400">
               <li>
-                <a href="mailto:kkhumanfirst@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors duration-300 hover:translate-x-1 inline-flex">
+                <a href="mailto:kk.humanfirst@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors duration-300 hover:translate-x-1 inline-flex">
                   <Mail size={16} />
                   Email
                 </a>

@@ -205,6 +205,10 @@ export default function StartWithYouPage() {
                       <h4 className="text-lg md:text-xl font-bold text-black">Future of Work | Next Gen Entrepreneurs</h4>
                       <p className="text-gray-600 leading-relaxed">Build the entrepreneurial thinking skills you'll need to thrive in your career.</p>
                     </div>
+                    <div className="space-y-3 pb-6 border-b border-gray-100">
+                      <h4 className="text-lg md:text-xl font-bold text-black">Skills Needed in 2026</h4>
+                      <p className="text-gray-600 leading-relaxed">Master the critical skills that will define success: strategic thinking, emotional intelligence, adaptability, and the ability to lead in an AI-augmented workplace.</p>
+                    </div>
                     <div className="space-y-3">
                       <h4 className="text-lg md:text-xl font-bold text-black">2026 Belongs to Leaders</h4>
                       <p className="text-gray-600 leading-relaxed">2026 belongs to people who can think, adapt, decide, and lead. AI may automate tasks — but ownership, influence, and value creation will remain as the most demanded skills.</p>

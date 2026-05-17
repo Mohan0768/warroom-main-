@@ -39,10 +39,10 @@ const FAQ_DATABASE = {
 }
 
 const QUICK_REPLIES = [
+  'WAR ROOM Business Simulation',
+  'Keynote',
+  'Workshop',
   'What\'s the WAR ROOM?',
-  'Who is this for?',
-  'Custom programs?',
-  'What makes you different?',
   'Book a call',
   'Contact us',
 ]
@@ -52,7 +52,7 @@ export function Chatbot() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: 'Hi! 👋 I\'m here to help answer questions about humanfirstbykk programs. What would you like to know?',
+      text: 'Hi! 👋 What are you interested in?',
       sender: 'bot',
       timestamp: new Date(),
       quickReplies: QUICK_REPLIES,
