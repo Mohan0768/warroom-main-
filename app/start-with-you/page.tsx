@@ -191,7 +191,7 @@ export default function StartWithYouPage() {
               </div>
 
               {/* Right Side - Students Section */}
-              <div className="flex-1 space-y-6 bg-blue-50 p-6 md:p-8 rounded-lg">
+              <div className="flex-1 space-y-6">
                 <h3 className="text-2xl md:text-3xl font-bold text-blue-600">For Students (Free In-Person Sessions)</h3>
                 <p className="text-sm font-medium text-gray-600">Southeast Florida</p>
                 <div className="space-y-4">
@@ -202,6 +202,10 @@ export default function StartWithYouPage() {
                   <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
                     <h4 className="text-lg md:text-xl font-bold">Future of Work | Next Gen Entrepreneurs</h4>
                     <p className="text-gray-700">Build the entrepreneurial thinking skills you'll need to thrive in your career.</p>
+                  </div>
+                  <div className="border-l-4 border-amber-600 pl-6 py-2 space-y-3">
+                    <h4 className="text-lg md:text-xl font-bold">2026 Belongs to Leaders</h4>
+                    <p className="text-gray-700">2026 belongs to people who can think, adapt, decide, and lead. AI may automate tasks — but ownership, influence, and value creation will remain as the most demanded skills.</p>
                   </div>
                 </div>
                 <a
@@ -233,6 +237,19 @@ export default function StartWithYouPage() {
               BOOK A CALL NOW
             </a>
           </div>
+        </div>
+
+        {/* Developer Footer */}
+        <div className="mt-12 pt-8 border-t border-gray-300 text-center transition-all duration-300">
+          <p className="text-xs text-gray-500">
+            Page Developed by <span className="font-semibold text-gray-700">Mohan</span> &nbsp;|&nbsp; Email:&nbsp;
+            <a 
+              href="mailto:mohan20051028@gmail.com" 
+              className="text-amber-600 hover:text-amber-700 transition-colors duration-300"
+            >
+              mohan20051028@gmail.com
+            </a>
+          </p>
         </div>
       </section>
     </main>
