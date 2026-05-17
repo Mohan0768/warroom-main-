@@ -171,8 +171,16 @@ export default function StartWithYouPage() {
                       <p className="text-gray-600 leading-relaxed">Discover what makes you irreplaceable in an AI-driven world and how to leverage your unique perspective.</p>
                     </div>
                     <div className="space-y-3 pb-6 border-b border-gray-100">
+                      <h4 className="text-lg md:text-xl font-bold text-black">The Human Edge: Decision-Making in the AI Era</h4>
+                      <p className="text-gray-600 leading-relaxed">Master the decision-making frameworks that AI cannot replicate and lead your teams with confidence and clarity.</p>
+                    </div>
+                    <div className="space-y-3 pb-6 border-b border-gray-100">
                       <h4 className="text-lg md:text-xl font-bold text-black">AI in Leadership - Untold Stories of Managers in AI adoption</h4>
                       <p className="text-gray-600 leading-relaxed">Real stories from managers navigating AI integration, their challenges, breakthroughs, and lessons learned.</p>
+                    </div>
+                    <div className="space-y-3 pb-6 border-b border-gray-100">
+                      <h4 className="text-lg md:text-xl font-bold text-black">Building Tomorrow's Workforce: Leadership Beyond AI</h4>
+                      <p className="text-gray-600 leading-relaxed">Develop strategies to build and lead teams that thrive alongside AI, emphasizing human skills that drive competitive advantage.</p>
                     </div>
                     <div className="space-y-3">
                       <h4 className="text-lg md:text-xl font-bold text-black">Costly AI Mistakes: The Thinking Gap</h4>
