@@ -163,16 +163,33 @@ export function Chatbot() {
           quickReplies: ['Book a call', 'More questions', 'Contact us'],
         }
       } else if (
+        text.toLowerCase().includes('yes') ||
         text.toLowerCase().includes('book') ||
         text.toLowerCase().includes('call') ||
         text.toLowerCase().includes('meeting')
       ) {
+        const isYesResponse = text.toLowerCase().includes('yes')
         botResponse = {
           id: (Date.now() + 1).toString(),
-          text: 'Great! You can book a 1-on-1 meeting with KK using our Calendly booking section, or fill out the "Hire me to speak" form to discuss your specific needs.',
+          text: isYesResponse 
+            ? 'Perfect! You can book a 1-on-1 meeting with KK here: https://calendly.com/kk-humanfirst/30min\n\nAlternatively, you can fill out the "Hire me to speak" form to discuss your specific needs.'
+            : 'Great! You can book a 1-on-1 meeting with KK using our Calendly booking section: https://calendly.com/kk-humanfirst/30min\n\nOr fill out the "Hire me to speak" form to discuss your specific needs.',
           sender: 'bot',
           timestamp: new Date(),
           quickReplies: ['View booking', 'More questions', 'Contact form'],
+        }
+      } else if (
+        text.toLowerCase().includes('no') &&
+        (messages[messages.length - 1]?.text.includes('Would you like to book') ||
+         messages[messages.length - 1]?.text.includes('Would you like to discuss') ||
+         messages[messages.length - 1]?.text.includes('Would you like to schedule'))
+      ) {
+        botResponse = {
+          id: (Date.now() + 1).toString(),
+          text: 'No problem! Is there anything else you\'d like to know about our programs, or would you like to explore other options?',
+          sender: 'bot',
+          timestamp: new Date(),
+          quickReplies: ['Tell me more', 'Custom programs', 'Contact us'],
         }
       } else if (
         text.toLowerCase().includes('contact') ||
