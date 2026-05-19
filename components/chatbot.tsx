@@ -287,15 +287,33 @@ export function Chatbot() {
             {/* Quick Replies */}
             {messages[messages.length - 1]?.quickReplies && (
               <div className="flex flex-wrap gap-2 mt-4" suppressHydrationWarning={true}>
-                {messages[messages.length - 1].quickReplies.map((reply, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleSendMessage(reply)}
-                    className="text-xs bg-gray-200 hover:bg-gray-300 text-gray-800 px-3 py-1 rounded-full transition-colors duration-200"
-                  >
-                    {reply}
-                  </button>
-                ))}
+                {messages[messages.length - 1].quickReplies.map((reply, idx) => {
+                  // Check if this is a "Book a call" button
+                  if (reply.toLowerCase() === 'book a call') {
+                    return (
+                      <a
+                        key={idx}
+                        href="https://calendly.com/kk-humanfirst/30min"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs bg-gray-200 hover:bg-gray-300 text-gray-800 px-3 py-1 rounded-full transition-colors duration-200 inline-block"
+                      >
+                        {reply}
+                      </a>
+                    )
+                  }
+                  
+                  // Regular button for other replies
+                  return (
+                    <button
+                      key={idx}
+                      onClick={() => handleSendMessage(reply)}
+                      className="text-xs bg-gray-200 hover:bg-gray-300 text-gray-800 px-3 py-1 rounded-full transition-colors duration-200"
+                    >
+                      {reply}
+                    </button>
+                  )
+                })}
               </div>
             )}
 
