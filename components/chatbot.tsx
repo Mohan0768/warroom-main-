@@ -140,7 +140,7 @@ export function Chatbot() {
           text: 'Great choice! The WAR ROOM is a live business simulation where participants navigate a company through multiple stages of growth. It combines strategic thinking, rapid decision-making, and real-world business scenarios. Would you like to book a call to learn more?',
           sender: 'bot',
           timestamp: new Date(),
-          quickReplies: ['Book a call', 'More questions', 'Contact us'],
+          quickReplies: ['Yes', 'No'],
         }
       } else if (
         text.toLowerCase().includes('keynote')
@@ -150,7 +150,7 @@ export function Chatbot() {
           text: 'Excellent! Our keynotes focus on building entrepreneurial thinking and preparing for an AI-driven future. They\'re perfect for conferences, corporate events, and educational institutions. Would you like to schedule a speaking engagement?',
           sender: 'bot',
           timestamp: new Date(),
-          quickReplies: ['Book a call', 'More questions', 'Contact us'],
+          quickReplies: ['Yes', 'No'],
         }
       } else if (
         text.toLowerCase().includes('workshop')
@@ -160,33 +160,44 @@ export function Chatbot() {
           text: 'Perfect! Our workshops are interactive sessions designed to develop strategic thinking and decision-making skills. They can be customized for your organization\'s specific needs. Would you like to discuss a workshop for your team?',
           sender: 'bot',
           timestamp: new Date(),
-          quickReplies: ['Book a call', 'More questions', 'Contact us'],
+          quickReplies: ['Yes', 'No'],
         }
       } else if (
-        text.toLowerCase().includes('yes') ||
-        text.toLowerCase().includes('book') ||
-        text.toLowerCase().includes('call') ||
-        text.toLowerCase().includes('meeting')
+        text.toLowerCase().includes('yes') &&
+        (messages[messages.length - 1]?.text.includes('Would you like to') ||
+         messages[messages.length - 1]?.text.includes('Would you like to book') ||
+         messages[messages.length - 1]?.text.includes('Would you like to discuss') ||
+         messages[messages.length - 1]?.text.includes('Would you like to schedule'))
       ) {
-        const isYesResponse = text.toLowerCase().includes('yes')
         botResponse = {
           id: (Date.now() + 1).toString(),
-          text: isYesResponse 
-            ? 'Perfect! You can book a 1-on-1 meeting with KK here: https://calendly.com/kk-humanfirst/30min\n\nAlternatively, you can fill out the "Hire me to speak" form to discuss your specific needs.'
-            : 'Great! You can book a 1-on-1 meeting with KK using our Calendly booking section: https://calendly.com/kk-humanfirst/30min\n\nOr fill out the "Hire me to speak" form to discuss your specific needs.',
+          text: 'Perfect! You can book a 1-on-1 meeting with KK using this link:\n\nhttps://calendly.com/kk-humanfirst/30min\n\nAlternatively, you can fill out the "Hire me to speak" form to discuss your specific needs.',
           sender: 'bot',
           timestamp: new Date(),
-          quickReplies: ['View booking', 'More questions', 'Contact form'],
+          quickReplies: ['Tell me more', 'Custom programs', 'Contact us'],
         }
       } else if (
         text.toLowerCase().includes('no') &&
-        (messages[messages.length - 1]?.text.includes('Would you like to book') ||
+        (messages[messages.length - 1]?.text.includes('Would you like to') ||
+         messages[messages.length - 1]?.text.includes('Would you like to book') ||
          messages[messages.length - 1]?.text.includes('Would you like to discuss') ||
          messages[messages.length - 1]?.text.includes('Would you like to schedule'))
       ) {
         botResponse = {
           id: (Date.now() + 1).toString(),
           text: 'No problem! Is there anything else you\'d like to know about our programs, or would you like to explore other options?',
+          sender: 'bot',
+          timestamp: new Date(),
+          quickReplies: ['Tell me more', 'Custom programs', 'Contact us'],
+        }
+      } else if (
+        text.toLowerCase().includes('book') ||
+        text.toLowerCase().includes('call') ||
+        text.toLowerCase().includes('meeting')
+      ) {
+        botResponse = {
+          id: (Date.now() + 1).toString(),
+          text: 'Great! You can book a 1-on-1 meeting with KK using our Calendly booking link:\n\nhttps://calendly.com/kk-humanfirst/30min',
           sender: 'bot',
           timestamp: new Date(),
           quickReplies: ['Tell me more', 'Custom programs', 'Contact us'],
