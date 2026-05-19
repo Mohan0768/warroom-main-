@@ -147,7 +147,7 @@ export default function TheGaragePage() {
               Schedule a call to discuss your idea and how The Garage can help you validate and build it.
             </p>
             <a 
-              href="https://calendly.com/mohan20051028/new-meeting"
+              href="https://calendly.com/kk-humanfirst/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-medium rounded transition-all duration-300 hover:scale-105 hover:opacity-90"

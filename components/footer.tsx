@@ -63,7 +63,7 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-bold mb-4">PROGRAMS</h3>
             <ul className="space-y-2 text-xs text-gray-400">
-              <li><Link href="/war-room" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">War Room</Link></li>
+              <li><a href="https://v0-gaming-website-eosin.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">War Room</a></li>
               <li><Link href="/start-with-you" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Start With You</Link></li>
               <li><Link href="/the-garage" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">The Garage</Link></li>
               
@@ -126,13 +126,15 @@ export function Footer() {
               <br />
               LEARNED EARLIER.
             </h2>
-            <Link 
-              href="#"
-              className="px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90 whitespace-nowrap"
+            <a
+              href="https://calendly.com/kk-humanfirst/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90 whitespace-nowrap inline-block"
               style={{ backgroundColor: '#D4A017' }}
             >
               BOOK A CALL
-            </Link>
+            </a>
           </div>
         </div>
 
