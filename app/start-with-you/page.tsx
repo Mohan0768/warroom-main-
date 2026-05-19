@@ -39,14 +39,14 @@ export default function StartWithYouPage() {
               <a href="https://warroom-frontend-410969764896.us-central1.run.app/" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 text-black text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
                 ENTER WAR ROOM
               </a>
-              <a href="https://calendly.com/mohan20051028/new-meeting" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 text-black text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
+              <a href="https://calendly.com/kk-humanfirst/30min" target="_blank" rel="noopener noreferrer" className="px-4 lg:px-6 py-2 text-black text-xs md:text-sm font-medium rounded transition-all duration-300 hover:shadow-lg hover:scale-105 hover:opacity-90" style={{ backgroundColor: '#D4A017' }}>
                 BOOK A CALL
               </a>
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-4">
-              <a href="https://calendly.com/mohan20051028/new-meeting" target="_blank" rel="noopener noreferrer" className="px-3 py-2 text-black text-xs font-medium rounded" style={{ backgroundColor: '#D4A017' }}>
+              <a href="https://calendly.com/kk-humanfirst/30min" target="_blank" rel="noopener noreferrer" className="px-3 py-2 text-black text-xs font-medium rounded" style={{ backgroundColor: '#D4A017' }}>
                 BOOK A CALL
               </a>
             </div>
@@ -69,7 +69,7 @@ export default function StartWithYouPage() {
           {/* Session Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://calendly.com/mohan20051028/new-meeting"
+              href="https://calendly.com/kk-humanfirst/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none px-6 sm:px-8 py-3 text-black font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base"
@@ -78,7 +78,7 @@ export default function StartWithYouPage() {
               FOR BUSINESS 
             </a>
             <a
-              href="https://calendly.com/mohan20051028/new-meeting"
+              href="https://calendly.com/kk-humanfirst/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none px-6 sm:px-8 py-3 border-2 font-bold rounded transition-all duration-300 hover:shadow-lg hover:scale-105 text-center text-sm sm:text-base hover:text-black"
@@ -180,7 +180,7 @@ export default function StartWithYouPage() {
                     </div>
                   </div>
                   <a
-                    href="https://calendly.com/mohan20051028/new-meeting"
+                    href="https://calendly.com/kk-humanfirst/30min"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-8 px-6 py-3 text-black font-bold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 text-center"
@@ -206,12 +206,12 @@ export default function StartWithYouPage() {
                       <p className="text-gray-600 leading-relaxed">Build the entrepreneurial thinking skills you'll need to thrive in your career.</p>
                     </div>
                     <div className="space-y-3">
-                      <h4 className="text-lg md:text-xl font-bold text-black">2026 Belongs to Leaders</h4>
+                      <h4 className="text-lg md:text-xl font-bold text-black">Skills needed in 2026</h4>
                       <p className="text-gray-600 leading-relaxed">2026 belongs to people who can think, adapt, decide, and lead. AI may automate tasks — but ownership, influence, and value creation will remain as the most demanded skills.</p>
                     </div>
                   </div>
                   <a
-                    href="https://calendly.com/mohan20051028/new-meeting"
+                    href="https://calendly.com/kk-humanfirst/30min"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-8 px-6 py-3 text-black font-bold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 text-center"
@@ -233,7 +233,7 @@ export default function StartWithYouPage() {
               Whether you're looking to hire me for your conference or want a free campus session, let's have a conversation about your needs.
             </p>
             <a 
-              href="https://calendly.com/mohan20051028/new-meeting"
+              href="https://calendly.com/kk-humanfirst/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-6 md:px-8 py-2 md:py-3 text-black text-sm md:text-base font-bold rounded hover:shadow-lg transition-all duration-300 hover:scale-105"

@@ -161,18 +161,17 @@ export function OfferingsSection() {
                 >
                   LEARN MORE
                 </Link>
-                <button
+                <a
+                  href="https://calendly.com/kk-humanfirst/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block px-6 py-2 rounded font-medium text-sm transition-all duration-300 w-fit hover:shadow-lg hover:scale-105 border-2 text-white"
                   style={{ 
                     borderColor: offering.textColor === 'text-white' ? 'white' : 'black'
                   }}
-                  onClick={() => {
-                    // Open Calendly or your booking system
-                    window.open('https://calendly.com', '_blank')
-                  }}
                 >
                   BOOK A CALL
-                </button>
+                </a>
               </div>
             </div>
           ))}

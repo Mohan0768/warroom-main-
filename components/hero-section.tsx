@@ -148,7 +148,7 @@ export function HeroSection() {
               WAR ROOM FREE TRIAL
             </a>
             <a 
-              href="https://calendly.com/mohan20051028/new-meeting" 
+              href="https://calendly.com/kk-humanfirst/30min" 
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 md:px-6 py-2 md:py-2.5 border-2 text-xs md:text-sm font-bold rounded transition-all duration-300 hover:text-black hover:shadow-lg hover:scale-105 inline-block text-center w-fit shadow-md"
