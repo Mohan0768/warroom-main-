@@ -63,9 +63,9 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-bold mb-4">PROGRAMS</h3>
             <ul className="space-y-2 text-xs text-gray-400">
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">War Room</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Start With You</Link></li>
-              <li><Link href="#" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">The Garage</Link></li>
+              <li><Link href="/war-room" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">War Room</Link></li>
+              <li><Link href="/start-with-you" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">Start With You</Link></li>
+              <li><Link href="/the-garage" className="hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block">The Garage</Link></li>
               
             </ul>
           </div>
