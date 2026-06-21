@@ -3,7 +3,8 @@ WORKDIR /app
 
 # install dependencies
 COPY package*.json yarn.lock* ./
-RUN npm ci
+# Use npm install instead of npm ci because package-lock.json is not present in the repo
+RUN npm install --no-audit --no-fund
 
 # build
 COPY . .
