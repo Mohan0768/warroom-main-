@@ -2,7 +2,7 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 # install dependencies
-COPY package*.json yarn.lock* ./
+COPY package.json package-lock.json ./
 RUN npm ci
 
 # build
