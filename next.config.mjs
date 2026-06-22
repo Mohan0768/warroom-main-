@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Emit a self-contained server bundle (.next/standalone) for a small,
+  // fast-starting container image on Cloud Run.
+  output: 'standalone',
   typescript: {
     ignoreBuildErrors: true,
   },

@@ -1,0 +1,21 @@
+# Files NOT uploaded to Cloud Build / gcloud as part of the source context.
+# Keeps uploads small and avoids shipping local/build artifacts.
+.git/
+.gitignore
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Local env & logs
+.env
+.env*.local
+*.log
+
+# Editor / OS
+.vscode/
+.DS_Store
+
+# Docs not needed to build the image
+*.md
