@@ -106,10 +106,10 @@ export function HeroSection() {
       </div>
 
       {/* Main Content - Image on top, text below with spacing */}
-      <div className="relative z-10 flex flex-col gap-2 lg:gap-2 items-center px-4 sm:px-6 lg:px-6 py-0 lg:py-0 min-h-[auto] lg:min-h-screen lg:h-screen pt-2">
+      <div className="relative z-10 flex flex-col gap-6 lg:gap-8 items-center px-4 sm:px-6 lg:px-6 py-0 lg:py-0 min-h-[auto] lg:min-h-screen lg:h-screen pt-6 lg:pt-12">
         
         {/* Image Section - Top on all devices */}
-        <div className="w-full flex items-center justify-center flex-shrink-0 animate-fadeInUp pt-0 lg:pt-0 flex-shrink flex-grow-0 px-1 sm:px-2">
+        <div className="w-full flex items-center justify-center flex-shrink-0 animate-fadeInUp pt-4 lg:pt-8 flex-shrink flex-grow-0 px-1 sm:px-2">
           <div className="w-full max-w-[280px] sm:max-w-sm md:max-w-xl lg:max-w-4xl aspect-video">
             <img 
               src="/hero-background.jpg"
@@ -120,24 +120,24 @@ export function HeroSection() {
         </div>
 
         {/* Text Section - Bottom on all devices */}
-        <div className="w-full flex flex-col items-center justify-start lg:justify-end animate-fadeInUp max-w-4xl mx-auto flex-none lg:flex-1 pb-4 text-center" style={{ animationDelay: '0.1s' }}>
+        <div className="w-full flex flex-col items-center justify-start lg:justify-end animate-fadeInUp max-w-4xl mx-auto flex-none lg:flex-1 pb-8 lg:pb-12 text-center" style={{ animationDelay: '0.1s' }}>
           {/* Main Headline */}
-          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight text-white mb-1 md:mb-2 text-center text-balance">
+          <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black leading-tight text-white mb-4 md:mb-6 text-center text-balance">
             AI can answer any question - But it cannot ask the question that only your life has prepared you to ask{' '}
             <span style={{ color: '#D4A017' }}>- KK</span>
           </h1>
 
           {/* Description */}
-          <p className="text-xs text-gray-300 leading-relaxed mb-1 text-center">
+          <p className="text-xs text-gray-300 leading-relaxed mb-3 text-center">
             In an AI-driven world, how you think determines your career, direction, and growth.
           </p>
 
-          <p className="text-xs text-gray-400 font-regular mb-3 text-center">
+          <p className="text-xs text-gray-400 font-regular mb-6 lg:mb-8 text-center">
             Entrepreneurial thinking workshops & business simulations
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-2 md:gap-3 mb-3 mt-2 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 lg:mb-10 mt-2 justify-center">
             <a 
               href="https://v0-gaming-website-eosin.vercel.app/" 
               target="_blank"
@@ -167,7 +167,7 @@ export function HeroSection() {
           </div>
 
           {/* Credentials Image */}
-          <div className="w-full max-w-3xl mt-4 transition-all duration-300 hover:scale-105">
+          <div className="w-full max-w-3xl mt-6 lg:mt-8 transition-all duration-300 hover:scale-105">
             <img 
               src="/credentials-bar.png"
               alt="15+ Years Training Leaders, $0 to 5-Figure, Founder of 3 Companies - Brandon Hall Group Awards"
