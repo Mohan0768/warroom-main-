@@ -166,13 +166,36 @@ export function HeroSection() {
             </a>
           </div>
 
-          {/* Credentials Image */}
-          <div className="w-full max-w-3xl mt-6 lg:mt-8 transition-all duration-300 hover:scale-105">
-            <img 
-              src="/credentials-bar.png"
-              alt="15+ Years Training Leaders, $0 to 5-Figure, Founder of 3 Companies - Brandon Hall Group Awards"
-              className="w-full h-auto object-contain"
-            />
+          {/* Credentials Bar */}
+          <div className="w-full mt-6 lg:mt-8 transition-all duration-300">
+            <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12 px-4">
+              {/* Logos */}
+              <div className="flex items-center gap-2">
+                <img 
+                  src="/credentials-bar.png"
+                  alt="Brandon Hall Group Awards"
+                  className="h-16 lg:h-20 object-contain"
+                />
+              </div>
+              
+              {/* Credential Items */}
+              <div className="flex flex-wrap justify-center gap-8 lg:gap-12 items-center w-full">
+                <div className="text-center hover:scale-105 transition-transform duration-300">
+                  <div className="text-sm lg:text-base font-bold text-white">15+</div>
+                  <div className="text-xs lg:text-sm text-gray-400">YEARS TRAINING LEADERS</div>
+                </div>
+                
+                <div className="text-center hover:scale-105 transition-transform duration-300">
+                  <div className="text-sm lg:text-base font-bold text-white">$0 to</div>
+                  <div className="text-xs lg:text-sm text-gray-400">5-FIGURE</div>
+                </div>
+                
+                <div className="text-center hover:scale-105 transition-transform duration-300">
+                  <div className="text-sm lg:text-base font-bold text-white">3</div>
+                  <div className="text-xs lg:text-sm text-gray-400">FOUNDER OF COMPANIES</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
