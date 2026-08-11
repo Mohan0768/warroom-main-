@@ -57,8 +57,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="bg-white">
-      <body className="font-sans antialiased text-gray-900">
+    <html lang="en" className="bg-background">
+      <body className="font-sans antialiased text-foreground">
         {children}
         <Chatbot />
         {process.env.NODE_ENV === 'production' && <Analytics />}
