@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { WaitlistModal } from '@/components/waitlist-modal'
 
 export const metadata = {
   title: 'Experience | humanfirstbykk',
@@ -51,7 +52,7 @@ export default function ExperiencePage() {
                   <p className="text-xs tracking-[0.18em] text-[#D4A017] mb-3">{experience.eyebrow}</p>
                   <h2 className="text-3xl md:text-4xl font-black mb-4">{experience.title}</h2>
                   <p className="text-gray-300 leading-relaxed mb-7">{experience.description}</p>
-                  <a href={experience.href} className="inline-block rounded bg-[#D4A017] px-6 py-3 text-sm font-medium text-black transition-all duration-300 hover:scale-105 hover:opacity-90">{experience.cta}</a>
+                  {experience.title === 'CEO CITY' ? <WaitlistModal /> : <a href={experience.href} className="inline-block rounded bg-[#D4A017] px-6 py-3 text-sm font-medium text-black transition-all duration-300 hover:scale-105 hover:opacity-90">{experience.cta}</a>}
                 </div>
               </article>
             ))}
