@@ -13,7 +13,7 @@ const experiences = [
     eyebrow: 'LIVE CEO Experience',
     description: 'CEO city is a virtual city where participants interview for roles, get promoted, and gain real CEO and leadership experience running day-to-day operations across a café, grocery store, consulting firm, farmer\'s market, stock exchange, and more.',
     href: 'https://ceo-city-website-copy.vercel.app',
-    cta: 'Coming soon…',
+    cta: 'Enter Ceocity',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-dssXmCoi1W75RccwF7VoTv2SdQ9gYK.png',
     imageAlt: 'Isometric CEO City live map with roads, buildings, and company markers',
   },
